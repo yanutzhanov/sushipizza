@@ -33,6 +33,7 @@ namespace SushiPizzaServer
             services.ConfigureMsSqlLocalContext(Configuration);
             services.ConfigureRepositoryWrapper();
             services.ConfigureAuthenticationWithJwtBearer();
+            services.ConfigureHasherManager();
 
             services.AddControllers();
         }

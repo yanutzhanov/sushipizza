@@ -8,6 +8,7 @@ using Repository;
 using Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using HashService;
 
 namespace SushiPizzaServer.Extensions
 {
@@ -67,6 +68,11 @@ namespace SushiPizzaServer.Extensions
                             ValidateIssuerSigningKey = true
                         };
                     });
+        }
+
+        public static void ConfigureHasherManager(this IServiceCollection services)
+        {
+            services.AddScoped<IHasherManager, HasherManager>();
         }
     }
 }
