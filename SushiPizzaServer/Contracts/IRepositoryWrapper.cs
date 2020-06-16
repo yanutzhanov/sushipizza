@@ -8,6 +8,6 @@ namespace Contracts
         IOrderRepository Order { get; }
         IProductRepository Product { get; }
         IUserRepository User { get; }
-        Task Save();
+        Task SaveAsync();
     }
 }

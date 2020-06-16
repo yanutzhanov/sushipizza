@@ -1,0 +1,10 @@
+2020-06-17 00:37:18.6448 INFO Returned all products in GetProducts method from database
+2020-06-17 00:37:44.1783 INFO Returned product with id: 1 in GetProduct method from database
+2020-06-17 00:37:51.3844 ERROR Not found product with id: 2 in database
+2020-06-17 00:38:00.6482 INFO Returned all products in GetProducts method from database
+2020-06-17 00:41:01.5659 INFO Returned all products in GetProducts method from database
+2020-06-17 00:41:51.6705 INFO Product with id: 3 was deleted from database in DeleteProduct method
+2020-06-17 00:41:58.9021 INFO Returned all products in GetProducts method from database
+2020-06-17 00:42:16.3929 INFO Updated product with id: 2 in UpdateProduct method
+2020-06-17 00:42:21.5347 INFO Returned product with id: 2 in GetProduct method from database
+2020-06-17 00:42:48.2941 INFO Returned all products in GetProducts method from database

@@ -57,7 +57,7 @@ namespace Repository
             this.context = context;
         }
 
-        public async Task Save()
+        public async Task SaveAsync()
         {
             await context.SaveChangesAsync();
         }

@@ -9,6 +9,7 @@ using Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using HashService;
+using AutoMapper;
 
 namespace SushiPizzaServer.Extensions
 {
@@ -73,6 +74,11 @@ namespace SushiPizzaServer.Extensions
         public static void ConfigureHasherManager(this IServiceCollection services)
         {
             services.AddScoped<IHasherManager, HasherManager>();
+        }
+
+        public static void ConfigureAutoMapper(this IServiceCollection services)
+        {
+            services.AddAutoMapper(typeof(Startup));
         }
     }
 }
