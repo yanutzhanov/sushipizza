@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using HashService;
 using AutoMapper;
+using SushiPizzaServer.ActionFilters;
 
 namespace SushiPizzaServer.Extensions
 {
@@ -79,6 +80,11 @@ namespace SushiPizzaServer.Extensions
         public static void ConfigureAutoMapper(this IServiceCollection services)
         {
             services.AddAutoMapper(typeof(Startup));
+        }
+
+        public static void ConfigureModelValidationAttribute(this IServiceCollection services)
+        {
+            services.AddScoped<ModelValidationAttribute>();
         }
     }
 }
