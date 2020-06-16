@@ -1,4 +1,5 @@
 ﻿using Entites.Models;
+using Entites.Shared;
 using Microsoft.EntityFrameworkCore;
 
 namespace Entites
@@ -17,6 +18,7 @@ namespace Entites
         {
             modelBuilder.Entity<Order>().Property(o => o.OrderTime).HasDefaultValueSql("GETDATE()");
             modelBuilder.Entity<Order>().Property(o => o.IsCompleted).HasDefaultValue(false);
+            modelBuilder.Entity<User>().Property(u => u.Role).HasDefaultValue(UserRoles.User);
         }
     }
 }

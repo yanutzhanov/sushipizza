@@ -7,7 +7,7 @@ namespace Authentication
     {
         public const string ISSUER = "SushiPizzaServer";
         public const string AUDIENCE = "SushiPizzaClient";
-        private const string KEY = "123456!@#$%^";
+        private const string KEY = "somesecretkeyfortestcase";
         public const int LIFETIME = 1;
         public static SymmetricSecurityKey GetSymmetricSecurityKey()
         {

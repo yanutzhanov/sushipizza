@@ -12,7 +12,7 @@ namespace Entites.Models
         public string FullName { get; set; }
 
         [Required(ErrorMessage = "Ну звонить хотя бы надо")]
-        [StringLength(12, MinimumLength = 10, ErrorMessage = "Вы из КЗ?")]
+        [StringLength(20, MinimumLength = 10, ErrorMessage = "Вы из КЗ?")]
         public string PhoneNumber { get; set; }
 
         [StringLength(30, ErrorMessage = "Больше 30 это много")]

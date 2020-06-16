@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Contracts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -21,10 +22,17 @@ namespace SushiPizzaServer.Controllers
             _repository = repository;
         }
 
-        [HttpGet]
+        [HttpGet, Authorize]
         public IActionResult Get()
         {
-            return Ok();
+            return Ok(User.Identity.Name);
         }
+
+        [HttpPost]
+        public IActionResult Post()
+        {
+            return Ok();
+        } 
+
     }
 }
