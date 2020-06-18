@@ -2,6 +2,7 @@
 using Contracts;
 using Entites;
 using Entites.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,8 @@ using System.Linq;
 using System.Reflection.PortableExecutable;
 using System.Security.Claims;
 using System.Security.Cryptography.X509Certificates;
+using System.Security.Principal;
+using System.Threading.Tasks;
 
 namespace Repository
 {
@@ -20,9 +23,17 @@ namespace Repository
             
         }
 
-        public JwtTokenResponse GetJwtToken(string userPhoneNumber, string userPassword)
+        public async Task<User> GetAuthenticatedUser(IIdentity identity)
         {
-            ClaimsIdentity identity = GetIdentity(userPhoneNumber, userPassword);
+            int UserId = Convert.ToInt32(identity.Name);
+            if (UserId == 0)
+                return null;
+            return await GetUserById(UserId);
+        }
+
+        public async Task<JwtTokenResponse> GetJwtToken(string userPhoneNumber, string userPassword)
+        {
+            ClaimsIdentity identity = await GetIdentity(userPhoneNumber, userPassword);
             if (identity is null)
                 return null;
 
@@ -35,17 +46,22 @@ namespace Repository
                 signingCredentials: new SigningCredentials(AuthOptions.GetSymmetricSecurityKey(), SecurityAlgorithms.HmacSha256)
                 );
             string encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
-            return new JwtTokenResponse { JwtToken = encodedJwt, UserFullName = identity.Name };
+            return new JwtTokenResponse { JwtToken = encodedJwt, Role = identity.Claims.Last().Value };
         }
 
-        private ClaimsIdentity GetIdentity(string userPhoneNumber, string userPassword)
+        public async Task<User> GetUserById(int id)
         {
-            User user = GetByCondition(u => u.PhoneNumber == userPhoneNumber && u.Password == userPassword).FirstOrDefault();
+            return await GetByCondition(u => u.Id == id).FirstOrDefaultAsync();
+        }
+
+        private async Task<ClaimsIdentity> GetIdentity(string userPhoneNumber, string userPassword)
+        {
+            User user = await GetByCondition(u => u.PhoneNumber == userPhoneNumber && u.Password == userPassword).FirstOrDefaultAsync();
             if (user is null)
                 return null;
             var claims = new List<Claim>()
             {
-                new Claim(ClaimsIdentity.DefaultNameClaimType, user.FullName),
+                new Claim(ClaimsIdentity.DefaultNameClaimType, user.Id.ToString()),
                 new Claim(ClaimsIdentity.DefaultRoleClaimType, user.Role)
             };
             ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, "Token", ClaimsIdentity.DefaultNameClaimType,

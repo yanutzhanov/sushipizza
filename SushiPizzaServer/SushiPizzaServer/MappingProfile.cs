@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using Entites.DTOs;
+using Entites.DTOs.ProductDTO;
+using Entites.DTOs.UserDTO;
 using Entites.Models;
 
 namespace SushiPizzaServer
@@ -12,6 +13,11 @@ namespace SushiPizzaServer
             CreateMap<ProductDTO, Product>();
             CreateMap<ProductForCreationDTO, Product>();
             CreateMap<ProductForUpdateDTO, Product>();
+            CreateMap<User, UserDTO>();
+            CreateMap<UserDTO, User>();
+            CreateMap<UserForCreationDTO, User>();
+            CreateMap<UserForUpdateDTO, User>();
+
         }
     }
 }

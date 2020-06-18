@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using Contracts;
-using Entites.DTOs;
+using Entites.DTOs.ProductDTO;
 using Entites.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -30,7 +30,7 @@ namespace SushiPizzaServer.Controllers
         public IActionResult GetProducts()
         {
             logger.LogInfo($"Returned all products in GetProducts method from database");
-            return Ok(mapper.Map<IEnumerable<ProductDTO>>(repository.Product.GetAll()));
+            return Ok(mapper.Map<IEnumerable<Product>, IEnumerable<ProductDTO>>(repository.Product.GetAll()));
         }
 
         [HttpGet("{id}")]
@@ -55,12 +55,12 @@ namespace SushiPizzaServer.Controllers
                 return BadRequest("Product object is null");
             }
 
-            Product productEntity = mapper.Map<Product>(product);
+            Product productEntity = mapper.Map<ProductForCreationDTO, Product>(product);
             repository.Product.Create(productEntity);
             await repository.SaveAsync();
 
-            ProductDTO createdProduct = mapper.Map<ProductDTO>(productEntity);
-            return Ok();
+            ProductDTO createdProduct = mapper.Map<Product, ProductDTO>(productEntity);
+            return Ok(createdProduct);
         }
 
         [HttpPut("{id}")]

@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Entites.DTOs
+namespace Entites.DTOs.ProductDTO
 {
-    public class ProductForUpdateDTO
+    public class ProductForCreationDTO
     {
         [Required(ErrorMessage = "Название продукта обязательно")]
         [StringLength(30, ErrorMessage = "Длина названия не может быыть больше 30 символов")]
