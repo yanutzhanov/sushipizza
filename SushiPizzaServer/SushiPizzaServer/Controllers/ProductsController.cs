@@ -73,7 +73,7 @@ namespace SushiPizzaServer.Controllers
             }
 
             Product productEntity = await repository.Product.GetByIdAsync(id);
-            if (product is null)
+            if (productEntity is null)
             {
                 logger.LogError($"Not found product with id: {id} in database");
                 return NotFound();
