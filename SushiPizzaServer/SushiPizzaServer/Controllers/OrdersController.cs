@@ -28,9 +28,14 @@ namespace SushiPizzaServer.Controllers
             this.mapper = mapper;
         }
 
-        [HttpGet, Authorize(Roles = UserRoles.Admin)]
+        [HttpGet, Authorize]
         public IActionResult GetOrders()
         {
+            if (User.IsInRole(UserRoles.User))
+            {
+                logger.LogInfo($"All orders returned from database to user with id: {id}. Method GetOrders");
+                return Ok(mapper.Map<IEnumerable<Order>, IEnumerable<OrderDTO>>(repository.Order.GetOrdersWithDetailsForUser(Convert.ToInt32(User.Identity.Name))));
+            }
             logger.LogInfo("All orders returned from database. Method GetOrders");
             return Ok(mapper.Map<IEnumerable<Order>, IEnumerable<OrderDTO>>(repository.Order.GetOrdersWithDetails()));
         }
@@ -49,7 +54,7 @@ namespace SushiPizzaServer.Controllers
             return Ok();
         }
 
-        [HttpGet("{id}"), Authorize(Roles = UserRoles.Admin)]
+        [HttpGet("{id}"), Authorize]
         public async Task<IActionResult> GetOrder(int id)
         {
             Order order = await repository.Order.GetOrderWithDetailsById(id);
@@ -58,11 +63,19 @@ namespace SushiPizzaServer.Controllers
                 logger.LogError($"Not found order with id: {id} in database. Method GetOrder");
                 return NotFound();
             }
+            if (User.IsInRole(UserRoles.User))
+            {
+                if (order.UserId.ToString() != User.Identity.Name)
+                {
+                    logger.LogError($"The order does not belong to user with id: {User.Identity.Name}");
+                    return BadRequest($"The order does not belong to user");
+                }
+            }
             logger.LogInfo($"Order with id: {id} succesfully returned from database. Method GetOrder");
             return Ok(mapper.Map<Order, OrderDTO>(order));
         }
 
-        [HttpDelete("{id}"), Authorize(Roles = UserRoles.Admin)]
+        [HttpDelete("{id}"), Authorize]
         public async Task<IActionResult> DeleteOrder(int id)
         {
             Order order = await repository.Order.GetOrderById(id);
@@ -71,13 +84,21 @@ namespace SushiPizzaServer.Controllers
                 logger.LogError($"Order with id: {id} not found in database");
                 return NotFound();
             }
+            if (User.IsInRole(UserRoles.User))
+            {
+                if (order.UserId.ToString() != User.Identity.Name)
+                {
+                    logger.LogError($"The order does not belong to user with id: {User.Identity.Name}");
+                    return BadRequest($"The order does not belong to user");
+                }
+            }
             repository.Order.DeleteOrder(order);
             await repository.SaveAsync();
             logger.LogInfo($"Order with id: {id} succesfully deleted from database");
             return NoContent();
         }
 
-        [HttpPut("{id}"), Authorize(Roles = UserRoles.Admin)]
+        [HttpPut("{id}")]
         public async Task<IActionResult> UpdateOrder(int id, [FromBody] OrderForUpdateDTO order)
         {
             if (order is null)
@@ -90,6 +111,14 @@ namespace SushiPizzaServer.Controllers
             {
                 logger.LogError($"Order with id: {id} not found in database");
                 return NotFound();
+            }
+            if (User.IsInRole(UserRoles.User))
+            {
+                if (orderEntity.UserId.ToString() != User.Identity.Name)
+                {
+                    logger.LogError($"The order does not belong to user with id: {User.Identity.Name}");
+                    return BadRequest($"The order does not belong to user");
+                }
             }
             var orderEntityNew = mapper.Map<OrderForUpdateDTO, Order>(order);
             repository.Order.UpdateOrder(orderEntity, orderEntityNew);

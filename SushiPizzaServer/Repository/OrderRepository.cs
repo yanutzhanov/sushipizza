@@ -20,6 +20,11 @@ namespace Repository
             return RepositoryContext.Orders.Include(o => o.OrderProducts).ThenInclude(op => op.Product).AsNoTracking();
         }
 
+        public IEnumerable<Order> GetOrdersWithDetailsForUser(int userId)
+        {
+            return RepositoryContext.Orders.Include(o => o.OrderProducts).ThenInclude(op => op.Product).Where(op => op.UserId == userId).AsNoTracking();
+        }
+
         public void CreateOrder(Order order)
         {
             if (order.UserId != 0 && order.UserId != null)
