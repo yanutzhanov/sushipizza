@@ -33,7 +33,7 @@ namespace SushiPizzaServer.Controllers
         {
             if (User.IsInRole(UserRoles.User))
             {
-                logger.LogInfo($"All orders returned from database to user with id: {id}. Method GetOrders");
+                logger.LogInfo($"All orders returned from database to user with id: {User.Identity.Name}. Method GetOrders");
                 return Ok(mapper.Map<IEnumerable<Order>, IEnumerable<OrderDTO>>(repository.Order.GetOrdersWithDetailsForUser(Convert.ToInt32(User.Identity.Name))));
             }
             logger.LogInfo("All orders returned from database. Method GetOrders");

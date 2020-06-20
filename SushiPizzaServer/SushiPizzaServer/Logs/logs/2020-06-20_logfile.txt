@@ -1,0 +1,190 @@
+2020-06-20 10:52:15.9509 INFO Returned all products in GetProducts method from database
+2020-06-20 10:52:27.0314 INFO Returned all products in GetProducts method from database
+2020-06-20 10:52:46.0188 INFO Returned all products in GetProducts method from database
+2020-06-20 10:52:51.7946 ERROR Something went wrong: AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+IEnumerable`1 -> IEnumerable`1
+System.Collections.Generic.IEnumerable`1[[Entites.Models.Product, Entites, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> System.Collections.Generic.IEnumerable`1[[Entites.DTOs.ProductDTO.ProductDTO, Entites, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+ ---> System.InvalidOperationException: Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at lambda_method(Closure , IEnumerable`1 , IEnumerable`1 , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , IEnumerable`1 , IEnumerable`1 , ResolutionContext )
+   at SushiPizzaServer.Controllers.ProductsController.GetProducts() in C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Controllers\ProductsController.cs:line 33
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-06-20 10:53:13.1527 INFO Returned all products in GetProducts method from database
+2020-06-20 10:53:25.7008 INFO Returned all products in GetProducts method from database
+2020-06-20 11:02:16.9527 INFO Returned all products in GetProducts method from database
+2020-06-20 11:03:03.2865 INFO Returned all products in GetProducts method from database
+2020-06-20 11:03:57.2172 INFO Returned all products in GetProducts method from database
+2020-06-20 11:04:05.2683 INFO Returned all products in GetProducts method from database
+2020-06-20 11:05:33.3703 INFO Returned all products in GetProducts method from database
+2020-06-20 11:05:49.1723 INFO Returned all products in GetProducts method from database
+2020-06-20 11:06:16.3287 INFO Returned all products in GetProducts method from database
+2020-06-20 11:06:41.8181 INFO Returned all products in GetProducts method from database
+2020-06-20 11:07:32.4300 INFO Returned all products in GetProducts method from database
+2020-06-20 11:07:57.8866 INFO Returned all products in GetProducts method from database
+2020-06-20 11:08:30.5090 INFO Returned all products in GetProducts method from database
+2020-06-20 11:09:05.0749 INFO Returned all products in GetProducts method from database
+2020-06-20 11:11:48.3821 INFO Returned all products in GetProducts method from database
+2020-06-20 11:12:17.2583 INFO Returned all products in GetProducts method from database
+2020-06-20 11:12:33.0459 INFO Returned all products in GetProducts method from database
+2020-06-20 11:13:26.9848 INFO Returned all products in GetProducts method from database
+2020-06-20 11:13:33.3087 INFO Returned all products in GetProducts method from database
+2020-06-20 11:13:38.2461 INFO Returned all products in GetProducts method from database
+2020-06-20 11:14:00.7241 INFO Returned all products in GetProducts method from database
+2020-06-20 11:14:28.7479 INFO Returned all products in GetProducts method from database
+2020-06-20 11:18:51.0783 INFO Returned all products in GetProducts method from database
+2020-06-20 11:19:09.1255 INFO Returned all products in GetProducts method from database
+2020-06-20 11:19:50.4645 INFO Returned all products in GetProducts method from database
+2020-06-20 11:20:06.8629 INFO Returned all products in GetProducts method from database
+2020-06-20 11:20:56.9069 INFO Returned all products in GetProducts method from database
+2020-06-20 11:21:31.1016 INFO Returned all products in GetProducts method from database
+2020-06-20 11:21:49.2693 INFO Returned all products in GetProducts method from database
+2020-06-20 11:21:56.0703 INFO Returned all products in GetProducts method from database
+2020-06-20 11:21:56.9753 INFO Returned all products in GetProducts method from database
+2020-06-20 11:22:44.6864 INFO Returned all products in GetProducts method from database
+2020-06-20 11:24:07.1519 INFO Returned all products in GetProducts method from database
+2020-06-20 11:24:17.1045 INFO Returned all products in GetProducts method from database
+2020-06-20 11:25:14.3335 INFO Returned all products in GetProducts method from database
+2020-06-20 11:25:35.2678 INFO Returned all products in GetProducts method from database
+2020-06-20 11:25:39.7739 INFO Returned all products in GetProducts method from database
+2020-06-20 11:26:16.6644 INFO Returned all products in GetProducts method from database
+2020-06-20 11:32:42.9906 INFO Returned all products in GetProducts method from database
+2020-06-20 11:33:04.4680 INFO Returned all products in GetProducts method from database
+2020-06-20 11:33:23.6808 INFO Returned all products in GetProducts method from database
+2020-06-20 11:34:03.9399 INFO Returned all products in GetProducts method from database
+2020-06-20 11:34:10.7221 INFO Returned all products in GetProducts method from database
+2020-06-20 11:34:38.1760 INFO Returned all products in GetProducts method from database
+2020-06-20 11:35:08.6245 INFO Returned all products in GetProducts method from database
+2020-06-20 11:35:31.3536 INFO Returned all products in GetProducts method from database
+2020-06-20 11:35:40.5488 INFO Returned all products in GetProducts method from database
+2020-06-20 11:36:36.9008 INFO Returned all products in GetProducts method from database
+2020-06-20 11:36:55.6435 INFO Returned all products in GetProducts method from database
+2020-06-20 11:37:18.4138 INFO Returned all products in GetProducts method from database
+2020-06-20 11:37:46.1458 INFO Returned all products in GetProducts method from database
+2020-06-20 11:38:02.9154 INFO Returned all products in GetProducts method from database
+2020-06-20 11:38:22.0868 INFO Returned all products in GetProducts method from database
+2020-06-20 11:39:04.0669 INFO Returned all products in GetProducts method from database
+2020-06-20 11:40:51.2716 INFO Returned all products in GetProducts method from database
+2020-06-20 11:42:21.5639 INFO Returned all products in GetProducts method from database
+2020-06-20 11:44:00.0817 INFO Returned all products in GetProducts method from database
+2020-06-20 11:44:22.3570 INFO Returned all products in GetProducts method from database
+2020-06-20 11:45:15.1189 INFO Returned all products in GetProducts method from database
+2020-06-20 11:45:20.1075 INFO Returned all products in GetProducts method from database
+2020-06-20 11:45:58.7602 INFO Returned all products in GetProducts method from database
+2020-06-20 11:46:27.6562 INFO Returned all products in GetProducts method from database
+2020-06-20 11:46:56.9636 INFO Returned all products in GetProducts method from database
+2020-06-20 11:48:16.9019 INFO Returned all products in GetProducts method from database
+2020-06-20 11:48:56.7436 INFO Returned all products in GetProducts method from database
+2020-06-20 11:49:21.6465 INFO Returned all products in GetProducts method from database
+2020-06-20 11:49:42.8616 INFO Returned all products in GetProducts method from database
+2020-06-20 11:49:58.2204 INFO Returned all products in GetProducts method from database
+2020-06-20 11:50:24.7471 INFO Returned all products in GetProducts method from database
+2020-06-20 11:50:37.0109 INFO Returned all products in GetProducts method from database
+2020-06-20 11:51:13.1107 INFO Returned all products in GetProducts method from database
+2020-06-20 11:51:24.6452 INFO Returned all products in GetProducts method from database
+2020-06-20 11:51:40.0916 INFO Returned all products in GetProducts method from database
+2020-06-20 11:52:22.0672 INFO Returned all products in GetProducts method from database
+2020-06-20 11:53:04.4528 INFO Returned all products in GetProducts method from database
+2020-06-20 11:53:09.6856 INFO Returned all products in GetProducts method from database
+2020-06-20 11:53:19.9854 INFO Returned all products in GetProducts method from database
+2020-06-20 11:58:26.9083 INFO Returned all products in GetProducts method from database
+2020-06-20 11:59:37.9058 INFO Returned all products in GetProducts method from database
+2020-06-20 11:59:41.5440 INFO Returned all products in GetProducts method from database
+2020-06-20 12:00:11.9446 INFO Returned all products in GetProducts method from database
+2020-06-20 12:03:35.0745 INFO Returned all products in GetProducts method from database
+2020-06-20 12:06:44.5106 INFO Returned all products in GetProducts method from database
+2020-06-20 12:08:25.5055 INFO Returned all products in GetProducts method from database
+2020-06-20 12:13:36.6621 INFO Returned all products in GetProducts method from database
+2020-06-20 12:13:40.9374 INFO Returned all products in GetProducts method from database
+2020-06-20 12:25:55.4475 INFO Returned all products in GetProducts method from database
+2020-06-20 12:26:46.3463 INFO Returned all products in GetProducts method from database
+2020-06-20 12:32:38.7519 INFO Returned all products in GetProducts method from database
+2020-06-20 12:36:10.8113 INFO Returned all products in GetProducts method from database
+2020-06-20 12:36:20.0283 INFO Returned all products in GetProducts method from database
+2020-06-20 12:36:35.6095 INFO Returned all products in GetProducts method from database
+2020-06-20 14:08:57.2894 INFO Returned all products in GetProducts method from database
+2020-06-20 14:08:57.2894 INFO Returned all products in GetProducts method from database
+2020-06-20 14:09:39.4772 INFO Returned all products in GetProducts method from database
+2020-06-20 14:09:45.9925 INFO Returned all products in GetProducts method from database
+2020-06-20 14:10:04.0635 INFO Returned all products in GetProducts method from database
+2020-06-20 14:10:09.6225 INFO Returned all products in GetProducts method from database
+2020-06-20 14:10:14.4386 INFO Returned all products in GetProducts method from database
+2020-06-20 14:10:17.1059 INFO Returned all products in GetProducts method from database
+2020-06-20 14:13:03.9285 INFO Returned all products in GetProducts method from database
+2020-06-20 14:21:12.2798 INFO Returned all products in GetProducts method from database
+2020-06-20 14:21:42.7883 INFO Returned all products in GetProducts method from database
+2020-06-20 14:22:05.8069 INFO Returned all products in GetProducts method from database
+2020-06-20 14:22:20.8627 INFO Returned all products in GetProducts method from database
+2020-06-20 14:36:41.4828 INFO Returned all products in GetProducts method from database
+2020-06-20 14:37:10.1341 INFO Returned all products in GetProducts method from database
+2020-06-20 14:38:15.2314 INFO Returned all products in GetProducts method from database
+2020-06-20 14:38:24.5530 INFO Returned all products in GetProducts method from database
+2020-06-20 14:38:30.8321 INFO Returned all products in GetProducts method from database
+2020-06-20 14:38:50.1530 INFO Returned all products in GetProducts method from database
+2020-06-20 14:39:01.7324 INFO Returned all products in GetProducts method from database
+2020-06-20 14:40:48.5518 INFO Returned all products in GetProducts method from database
+2020-06-20 14:43:26.8151 INFO Returned all products in GetProducts method from database
+2020-06-20 14:43:32.7666 INFO Returned all products in GetProducts method from database
+2020-06-20 14:43:47.9948 INFO Returned all products in GetProducts method from database
+2020-06-20 14:43:55.7594 INFO Returned all products in GetProducts method from database
+2020-06-20 14:44:42.7779 INFO Returned all products in GetProducts method from database
+2020-06-20 14:44:44.5597 INFO Returned all products in GetProducts method from database
+2020-06-20 14:46:32.5536 INFO Returned all products in GetProducts method from database
+2020-06-20 14:48:55.5004 INFO Returned all products in GetProducts method from database
+2020-06-20 14:49:04.0350 INFO Returned all products in GetProducts method from database
+2020-06-20 14:51:00.0343 INFO Returned all products in GetProducts method from database
+2020-06-20 14:54:46.7881 INFO Returned all products in GetProducts method from database
+2020-06-20 15:03:37.1099 INFO Returned all products in GetProducts method from database
+2020-06-20 15:04:22.3639 INFO Returned all products in GetProducts method from database
+2020-06-20 15:12:46.9403 INFO Returned all products in GetProducts method from database
+2020-06-20 15:14:29.2902 INFO Returned all products in GetProducts method from database
+2020-06-20 15:19:07.5347 INFO Returned all products in GetProducts method from database
+2020-06-20 15:19:12.0317 INFO Returned all products in GetProducts method from database
+2020-06-20 15:19:48.0720 INFO Returned all products in GetProducts method from database
+2020-06-20 15:19:48.2557 INFO Returned all products in GetProducts method from database
+2020-06-20 15:20:11.7970 INFO Returned all products in GetProducts method from database
+2020-06-20 15:23:45.6382 INFO Returned all products in GetProducts method from database
+2020-06-20 15:23:53.3192 INFO Returned all products in GetProducts method from database
+2020-06-20 15:24:11.4784 INFO Returned all products in GetProducts method from database
+2020-06-20 15:24:26.4314 INFO Returned all products in GetProducts method from database
+2020-06-20 15:24:33.8598 INFO Returned all products in GetProducts method from database
+2020-06-20 15:25:17.8354 INFO Returned all products in GetProducts method from database
+2020-06-20 15:25:27.4131 INFO Returned all products in GetProducts method from database
+2020-06-20 15:25:42.4386 INFO Returned all products in GetProducts method from database
+2020-06-20 15:25:57.5913 INFO Returned all products in GetProducts method from database
+2020-06-20 15:26:10.0264 INFO Returned all products in GetProducts method from database
+2020-06-20 15:26:59.5737 INFO Returned all products in GetProducts method from database
+2020-06-20 15:30:28.1440 INFO Returned all products in GetProducts method from database
+2020-06-20 15:36:15.0978 INFO Returned all products in GetProducts method from database
+2020-06-20 15:36:25.4977 INFO Returned all products in GetProducts method from database
+2020-06-20 15:36:51.8315 INFO Returned all products in GetProducts method from database
+2020-06-20 15:40:04.7735 INFO Returned all products in GetProducts method from database

@@ -7,7 +7,7 @@ namespace Contracts
     public interface IOrderRepository : IRepositoryBase<Order>
     {
         IEnumerable<Order> GetOrdersWithDetails();
-        IEnumerable<Order> GetOrdersWithDetailsForUser(int userId)
+        IEnumerable<Order> GetOrdersWithDetailsForUser(int userId);
         void CreateOrder(Order order);
         Task<Order> GetOrderWithDetailsById(int id);
         void DeleteOrder(Order order);

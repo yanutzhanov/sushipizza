@@ -1,0 +1,84 @@
+tr, th, td {
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.orders {
+    font-family: 'Montserrat', sans-serif;
+
+}
+td span {
+    cursor: pointer;
+}
+th {
+    font-weight: 500;
+}
+th:first-of-type {
+    text-align: left;
+}
+tr td:first-of-type {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+table {
+    width: 100%;
+}
+.order-list {
+    width: 60%;
+    padding-right: 70px;
+    border-right: 1px solid black;
+}
+.deliver-info {
+    width: 20%;
+    margin-left: 70px;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.orders {
+    display: flex;
+    padding-right: 10%;
+    padding-left: 10%;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 34px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.total-sum {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.total-sum span {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.send-order {
+    text-align: center;
+}
+
+.send-order-btn {
+    background-color: #90D884;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin-top: 40px;
+    cursor: pointer;
+}

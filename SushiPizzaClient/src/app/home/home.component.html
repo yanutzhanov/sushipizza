@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="slider">
+        <div class="text-block">
+            <h2>
+                Лучшие суши в <br>
+                Астане 
+            </h2>
+            <p>
+                Бесплатная доставка <br>
+                круглосуточно
+            </p>
+        </div>
+        <div class="img-block">
+            <img src="/assets/images/slider1.png" alt="">
+        </div>
+    </div>
+    <div class="rolls">
+        <h2>Роллы</h2>
+        <div class="products-list">
+            <app-product-card *ngFor="let sushi of sushis"
+            [product]="sushi" (onClick)="addProductToShoppingCart($event)"></app-product-card>
+        </div>
+    </div>
+
+    <div class="sets">
+        <h2>Сеты</h2>
+        <div class="products-list">
+            <app-product-card></app-product-card>
+            <div class="line"></div>
+            <app-product-card></app-product-card>
+            <div class="line"></div>
+            <app-product-card></app-product-card>
+            <div class="line"></div>
+            <app-product-card></app-product-card>
+        </div>
+    </div>
+</div>

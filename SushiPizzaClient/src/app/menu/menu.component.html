@@ -1,0 +1,48 @@
+<nav>
+    <div class="header-top">
+        <img src="/assets/images/logo.png" alt="">
+        <div>
+            <span class="material-icons">
+                access_time
+            </span>
+            <span class="working-time">9:00 - 24:00</span>
+        </div>
+        <ul>
+            <li><a [routerLink]="['/home']" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">Главная</a></li>
+            <li><a [routerLink]="['/contacts']">Контакты</a></li>
+            <li><a [routerLink]="['/delivery']">Доставка</a></li>
+        </ul>
+        <ul class="auth" *ngIf="!isAuthorize">
+            <li><a [routerLink]="['/signin']">Вход</a></li> |
+            <li><a [routerLink]="['/signup']">Регистрация</a></li>
+        </ul>
+        <ul class="auth" *ngIf="isAuthorize">
+            <li><a [routerLink]="['/account']">Аккаунт</a></li> |
+            <li><button type="button" (click)="signOut()">Выход</button></li>
+        </ul>
+    </div>
+    <div class="header-bottom">
+        <div class="input-form">
+            <input type="search" placeholder="Поиск" id="">
+            <span class="material-icons search-button">
+                search
+            </span>
+        </div>
+        
+        <ul>
+            <li><a href="#">Роллы</a></li>
+            <li><a href="#">Сеты</a></li>
+        </ul>
+
+        <div class="cart">
+            <span class="material-icons">
+                shopping_cart
+            </span>
+            <a [routerLink]="['/shopping-cart']" class="shopping-cart">Корзина</a>
+            <div class="notify">
+                {{ itemsCount }}
+            </div>
+        </div>
+    </div>
+</nav>

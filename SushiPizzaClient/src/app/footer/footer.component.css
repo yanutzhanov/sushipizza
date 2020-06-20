@@ -1,0 +1,41 @@
+footer {
+    background-color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img {
+    width: 60px;
+    height: 50px;
+}
+span {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+}
+div:nth-of-type(2) {
+    width: 113px;
+}
+div:last-of-type {
+    width: 165px;
+}
+.deliver span {
+    background-image: url('/assets/images/mdi_truck-delivery-outline.png');
+}
+
+.work-time span {
+    background-image: url('/assets/images/bx_bx-time-five.png');
+}
+
+.phone-number span{
+    background-image: url('/assets/images/bx_bx-phone.png');
+}

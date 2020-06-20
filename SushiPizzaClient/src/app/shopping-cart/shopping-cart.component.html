@@ -1,0 +1,48 @@
+<div class="full-screen">
+    <h1>Заказы</h1>
+
+    <div class="orders">
+        <div class="order-list">
+            <table>
+                <tr>
+                    <th>Название</th>
+                    <th>Кол-во</th>
+                    <th>Цена</th>
+                </tr>
+                <tr *ngFor="let product of cart.productMapKeys">
+                    <td>{{ product.name }}</td>
+                    <td>
+                        <span class="material-icons" (click)="decreaseCount(product)">
+                            remove_circle_outline
+                        </span>
+                        {{ cart.productMap.get(product) }}
+                        <span class="material-icons" (click)="increaseCount(product)">
+                            add_circle_outline
+                        </span>
+                    </td>
+                    <td>{{ product.price * cart.productMap.get(product) }}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="deliver-info">
+            <form action="">
+                <p>
+                    <input type="text" id="address" placeholder="Адрес" />
+                </p>
+                <p>
+                    <input type="text" id="phoneNumber" placeholder="Телефон"/>
+                </p>
+
+                <p class="total-sum">
+                    К оплате: <span>{{ cart.totalSum }} тг</span>
+                </p>
+                
+                <p class="send-order">
+                    <button type="button" class="send-order-btn">
+                        Оформить заказ
+                    </button>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
