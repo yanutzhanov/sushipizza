@@ -14,6 +14,7 @@ export class ProductListComponent implements OnInit {
   public allProducts: Product[];
   public type?: string;
   public currentProducts: Product[];
+  public search = false;
 
   constructor(private data: DataService, private activeRoute: ActivatedRoute, private cart: CartService) { }
 
@@ -23,7 +24,13 @@ export class ProductListComponent implements OnInit {
         this.allProducts = res;
         this.activeRoute.params.subscribe(par => {
           this.convertType(par.type);
-          this.currentProducts = this.allProducts.filter(p => p.type === this.type);
+          if (!this.search) {
+            this.currentProducts = this.allProducts.filter(p => p.type === this.type);
+          }
+          else {
+            this.currentProducts = this.allProducts.filter(p => p.name.toLowerCase().includes(this.type.toLowerCase()));
+          }
+          console.log(this.search);
           console.log(this.type);
         });
       }
@@ -33,22 +40,28 @@ export class ProductListComponent implements OnInit {
   convertType = (type: string) => {
     switch (type) {
       case 'drinks':
+        this.search = false;
         this.type = 'Напиток';
         break;
       case 'rolls':
+        this.search = false;
         this.type = 'Суши';
         break;
       case 'sets':
+        this.search = false;
         this.type = 'Сет';
         break;
       case 'pizzas':
+        this.search = false;
         this.type = 'Пицца';
         break;
       case 'salads':
+        this.search = false;
         this.type = 'Салат';
         break;
       default:
-        this.type = '';
+        this.search = true;
+        this.type = type;
         break;
     }
   }

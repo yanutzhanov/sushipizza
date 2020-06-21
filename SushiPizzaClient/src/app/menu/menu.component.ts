@@ -2,6 +2,8 @@ import { Component, OnInit, OnChanges, SimpleChanges, OnDestroy } from '@angular
 import { ShoppingCartService } from '../shared/services/shopping-cart.service';
 import { CartService } from '../shared/services/cart.service';
 import { AuthService } from '../shared/services/auth.service';
+import { NgModel, NgControl } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -12,8 +14,9 @@ export class MenuComponent implements OnInit, OnDestroy {
 
   public isAuthorize: boolean;
   public itemsCount: number;
+  public searchText: string;
 
-  constructor(private cart: CartService, private auth: AuthService) { }
+  constructor(private cart: CartService, private auth: AuthService, private router: Router) { }
 
   ngOnDestroy(): void {
     this.cart.itemsCountObs.unsubscribe();
@@ -49,5 +52,11 @@ export class MenuComponent implements OnInit, OnDestroy {
   showRegister = () => {
     console.log('Workkk');
     document.querySelector('.modal').classList.remove('.hidden');
+  }
+
+  search = () => {
+    if (this.searchText) {
+      this.router.navigate([`/product-list/${this.searchText}`]);
+    }
   }
 }

@@ -11,7 +11,7 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { NotFoundComponent } from './error-pages/not-found/not-found.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { FooterComponent } from './footer/footer.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { ContactsComponent } from './contacts/contacts.component';
@@ -35,6 +35,7 @@ import { ProductListComponent } from './product-list/product-list.component';
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
     TextMaskModule,
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },

@@ -64,6 +64,11 @@ ul {
 .input-form {
     position: relative;
 }
+
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
 input {
     width: 280px;
     height: 31px;

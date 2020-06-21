@@ -26,7 +26,7 @@
         <p>
             <em *ngIf="validateControl('password') && hasError('password', 'required')">Необходимо заполнить пароль</em>
             <em *ngIf="validateControl('password') && hasError('password', 'maxlength')">Максимальная длина пароля 30 символов</em>
-            <em *ngIf="validateControl('password') && hasError('password', 'maxlength')">Минимальная длина пароля 6 символов</em>
+            <em *ngIf="validateControl('password') && hasError('password', 'minlength')">Минимальная длина пароля 6 символов</em>
         </p>
         <p><input formControlName="passwordConfirm" type="password" placeholder="Подтвердите пароль"></p>
         <p><em *ngIf="checkConfirm(userForm.value)">Пароли не совпадают</em></p>

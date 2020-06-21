@@ -24,8 +24,8 @@
     </div>
     <div class="header-bottom">
         <div class="input-form">
-            <input type="search" placeholder="Поиск" id="">
-            <span class="material-icons search-button">
+            <input tabindex="1" type="search" placeholder="Поиск" [(ngModel)]="searchText">
+            <span tabindex="2" class="material-icons search-button" (click)="search()" (keypress)="search()">
                 search
             </span>
         </div>
