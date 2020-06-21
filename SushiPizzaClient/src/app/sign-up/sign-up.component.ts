@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { RepositoryService } from '../shared/services/repository.service';
-import { UserForCreation, AuthService } from '../shared/services/auth.service';
+import { AuthService } from '../shared/services/auth.service';
+import { UserForCreation } from '../interfaces/user-for-creation.model';
 
 @Component({
   selector: 'app-sign-up',

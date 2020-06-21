@@ -380,3 +380,37 @@ Error Number:-2,State:0,Class:11
 2020-06-21 17:14:27.4763 INFO Succesfully returned information about user with id: 9
 2020-06-21 17:14:36.5624 INFO User signin complete
 2020-06-21 17:14:36.5964 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:15:47.7701 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:16:53.4428 INFO Order succesfully created
+2020-06-21 17:20:41.7325 INFO User signin complete
+2020-06-21 17:20:41.8428 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:20:56.8040 INFO Order succesfully created
+2020-06-21 17:24:17.6304 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:24:52.6412 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:25:04.5816 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:25:23.0658 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:25:36.9356 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:25:56.2771 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:26:03.7409 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:28:40.3201 INFO User signin complete
+2020-06-21 17:28:40.3501 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:28:46.1065 INFO Returned all products in GetProducts method from database
+2020-06-21 17:28:57.9671 INFO Order succesfully created
+2020-06-21 17:29:36.0487 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:29:46.9998 INFO Order succesfully created
+2020-06-21 17:30:09.2111 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:30:23.7653 INFO Order succesfully created
+2020-06-21 17:32:56.0371 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:33:17.6763 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:33:38.6655 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:39:58.6731 INFO Returned all products in GetProducts method from database
+2020-06-21 17:40:32.8560 INFO User signin complete
+2020-06-21 17:40:32.9545 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:41:36.0896 INFO Returned all products in GetProducts method from database
+2020-06-21 17:41:48.3042 INFO Returned all products in GetProducts method from database
+2020-06-21 17:42:00.7214 INFO Returned all products in GetProducts method from database
+2020-06-21 17:42:23.4142 INFO Returned all products in GetProducts method from database
+2020-06-21 17:43:23.2189 INFO Returned all products in GetProducts method from database
+2020-06-21 17:43:45.1617 INFO Returned all products in GetProducts method from database
+2020-06-21 17:43:57.8817 INFO Returned all products in GetProducts method from database
+2020-06-21 17:44:13.2876 INFO Returned all products in GetProducts method from database

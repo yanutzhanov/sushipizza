@@ -2,6 +2,7 @@
 using Contracts;
 using Entites;
 using Entites.Models;
+using HashService;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -31,9 +32,16 @@ namespace Repository
             return await GetUserById(UserId);
         }
 
+        public void RegisterUser(User user)
+        {
+            user.Password = HasherManager.GetHashedPassword(user.Password);
+            Create(user);
+        }
+
         public async Task<JwtTokenResponse> GetJwtToken(string userPhoneNumber, string userPassword)
         {
-            ClaimsIdentity identity = await GetIdentity(userPhoneNumber, userPassword);
+            string hashedPassword = HasherManager.GetHashedPassword(userPassword);
+            ClaimsIdentity identity = await GetIdentity(userPhoneNumber, hashedPassword);
             if (identity is null)
                 return null;
 

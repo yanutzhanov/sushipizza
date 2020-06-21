@@ -31,12 +31,12 @@ namespace Repository
             {
                 User user = RepositoryContext.Users.Find(order.UserId);
                 order.Customer = user;
-                order.CustomerPhoneNumber = order.Customer.PhoneNumber;
-
+                user.TotalSpend += order.TotalPrice;
+                order.TotalPrice *= (1 - user.Discount / 100);
+                user.Discount = CalculateDiscount(user.TotalSpend);
             }
             order.OrderProducts = order.OrderProducts.Select(op => new OrderProduct { Product = RepositoryContext.Products.Find(op.ProductId), Order = order }).ToArray();
 
-            order.TotalPrice = order.OrderProducts.Select(op => op.Product).Sum(p => p.Price);
             Create(order);
             RepositoryContext.OrderProducts.AddRange(order.OrderProducts);
         }
@@ -82,6 +82,15 @@ namespace Repository
             //RepositoryContext.OrderProducts.UpdateRange(order.OrderProducts);
             DeleteOrder(order);
             CreateOrder(orderNew);
+        }
+
+        private double CalculateDiscount(double userTotalSpend)
+        {
+            if (userTotalSpend > 10000 && userTotalSpend < 20000)
+                return 5;
+            else if (userTotalSpend >= 20000)
+                return 10;
+            return 0;
         }
     }
 }

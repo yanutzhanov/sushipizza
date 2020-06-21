@@ -41,13 +41,8 @@
     <div class="drinks">
         <h2><a [routerLink]="['/product-list/drinks']">Напитки</a></h2>
         <div class="products-list">
-            <app-product-card></app-product-card>
-            
-            <app-product-card></app-product-card>
-            
-            <app-product-card></app-product-card>
-            
-            <app-product-card></app-product-card>
+            <app-product-card *ngFor="let drink of drinks"
+                [product]="drink" (onClick)="addProductToShoppingCart($event)"></app-product-card>
         </div>
     </div>
 </div>

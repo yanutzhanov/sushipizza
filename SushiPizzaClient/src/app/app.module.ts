@@ -16,6 +16,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { AccountComponent } from './account/account.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ProductListComponent } from './product-list/product-list.component';
     SignUpComponent,
     SignInComponent,
     ContactsComponent,
-    ProductListComponent
+    ProductListComponent,
+    AccountComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +47,7 @@ import { ProductListComponent } from './product-list/product-list.component';
       { path: 'signin', component: SignInComponent },
       { path: 'contacts', component: ContactsComponent },
       { path: 'product-list/:type', component: ProductListComponent },
+      { path: 'account', component: AccountComponent },
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: '**', redirectTo: '/404', pathMatch: 'full' }
     ])

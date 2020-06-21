@@ -37,8 +37,9 @@
                 </p>
 
                 <p class="total-sum">
-                    К оплате: <span>{{ cart.totalSum }} тг</span>
+                    К оплате: <span>{{ cart.totalSum * (1 - discount / 100) }} тг</span>
                 </p>
+                <p *ngIf="discount">Скидка {{ discount }}%</p>
                 
                 <p class="send-order">
                     <button type="submit" class="send-order-btn">
@@ -46,6 +47,12 @@
                     </button>
                 </p>
             </form>
+            <div id="success" *ngIf="isOrderSuccessful">
+                <span class="material-icons">
+                    check_circle_outline
+                </span>
+                <p>Заказ успешно выполнен</p>
+            </div>
         </div>
     </div>
 </div>

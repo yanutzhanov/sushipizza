@@ -15,8 +15,11 @@ export class ShoppingCartComponent implements OnInit {
 
   public order: Order;
   public orderForm: FormGroup;
+  public isAuth = false;
   public phoneNumber: string;
   public address: string;
+  public isOrderSuccessful = false;
+  public discount = 0;
 
   constructor(public cart: CartService, private repo: RepositoryService, private auth: AuthService) { }
 
@@ -27,13 +30,16 @@ export class ShoppingCartComponent implements OnInit {
     });
     this.auth.isAuthorizedObs.subscribe(
       res => {
+        this.isAuth = res;
         if (res) {
           this.phoneNumber = this.auth.user.phoneNumber;
           this.address = this.auth.user.address;
+          this.discount = this.auth.user.discount;
         }
         else {
           this.phoneNumber = '';
           this.address = '';
+          this.discount = 0;
         }
       },
       err => console.error(err)
@@ -46,13 +52,20 @@ export class ShoppingCartComponent implements OnInit {
     const order: Order = {
       customerPhoneNumber: orderFormValue.phoneNumber,
       address: orderFormValue.address,
-      productsIds: this.cart.productIds
+      productsIds: this.cart.productIds,
+      totalPrice: this.cart.totalSum * (1 - this.discount / 100)
     };
+    if (this.isAuth) {
+      order.userId = this.auth.user.id;
+    }
 
     const apiUrl = 'api/orders';
     console.log(order);
     this.repo.create(apiUrl, order, false).subscribe(
-      res => console.log(res),
+      res =>  {
+        console.log(res);
+        this.isOrderSuccessful = true;
+      },
       err => console.log(err)
     );
   }

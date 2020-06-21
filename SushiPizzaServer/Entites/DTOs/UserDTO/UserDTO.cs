@@ -15,5 +15,6 @@ namespace Entites.DTOs.UserDTO
 
         [StringLength(30, ErrorMessage = "Больше 30 это много")]
         public string Address { get; set; }
+        public double Discount { get; set; }
     }
 }

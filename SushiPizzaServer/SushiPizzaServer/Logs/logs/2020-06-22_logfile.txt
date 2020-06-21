@@ -1,0 +1,80 @@
+2020-06-22 05:19:52.1873 INFO Returned all products in GetProducts method from database
+2020-06-22 05:21:29.0395 ERROR Something went wrong: Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__164_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:829792a0-285b-4424-bc8e-83ad29de2f6e
+Error Number:8152,State:10,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Repository.RepositoryWrapper.SaveAsync() in C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\Repository\RepositoryWrapper.cs:line 62
+   at SushiPizzaServer.Controllers.UsersController.Register(UserForCreationDTO user) in C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Controllers\UsersController.cs:line 72
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-06-22 05:24:53.9955 INFO User signin complete
+2020-06-22 05:24:54.2880 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:25:36.7580 INFO Order succesfully created
+2020-06-22 05:27:10.8662 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:27:24.4515 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:27:54.8086 INFO Order succesfully created
+2020-06-22 05:28:23.6470 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:28:26.1939 INFO Order succesfully created
+2020-06-22 05:29:49.8401 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:29:51.9146 INFO User signin complete
+2020-06-22 05:29:51.9564 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:29:55.5558 INFO Order succesfully created
+2020-06-22 05:30:39.5944 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:32:48.9299 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:33:56.1186 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:33:57.1257 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:35:47.3835 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:36:28.1297 INFO User signin complete
+2020-06-22 05:36:28.1678 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:36:38.3613 INFO Returned all products in GetProducts method from database
+2020-06-22 05:36:48.5412 INFO Order succesfully created
+2020-06-22 05:36:51.3645 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:38:39.8760 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:38:47.5761 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:38:51.3570 INFO Returned all products in GetProducts method from database
+2020-06-22 05:39:35.7447 INFO User signin complete
+2020-06-22 05:39:35.8625 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:47:15.6508 INFO Registred new user
+2020-06-22 05:47:15.8027 INFO Succesfully returned information about user with id: 17
+2020-06-22 05:47:33.5056 INFO User signin complete
+2020-06-22 05:47:33.5389 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:50:39.6305 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:50:41.9029 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:50:51.4093 INFO User signin complete
+2020-06-22 05:50:51.4372 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:53:42.6487 INFO Succesfully returned information about user with id: 12
+2020-06-22 05:54:07.6810 INFO Registred new user
+2020-06-22 05:54:07.7150 INFO Succesfully returned information about user with id: 18
+2020-06-22 05:54:19.7236 INFO User signin complete
+2020-06-22 05:54:19.7590 INFO Succesfully returned information about user with id: 12

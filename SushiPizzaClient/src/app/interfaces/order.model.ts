@@ -4,4 +4,5 @@ export interface Order {
     customerPhoneNumber: string;
     productsIds: number[];
     address: string;
+    totalPrice: number;
 }

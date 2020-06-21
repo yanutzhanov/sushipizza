@@ -19,11 +19,13 @@ namespace Entites.Models
         public string Address { get; set; }
 
         [Required(ErrorMessage = "Регаешься регайся до конца")]
-        [StringLength(30, MinimumLength = 6, ErrorMessage = "Что у тебя за пароль?")]
         public string Password { get; set; }
 
         [Required(ErrorMessage = "Роль важна")]
         public string Role { get; set; }
+
+        public double TotalSpend { get; set; }
+        public double Discount { get; set; }
 
         public ICollection<Order> Orders { get; set; }
     }

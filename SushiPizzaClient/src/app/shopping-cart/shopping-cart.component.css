@@ -112,3 +112,12 @@ img {
     width: 200px;
     height: 130px;
 }
+
+.deliver-info > div {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.deliver-info > div span {
+    font-size: 64px;
+}

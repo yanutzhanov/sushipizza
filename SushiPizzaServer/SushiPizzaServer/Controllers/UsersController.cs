@@ -68,12 +68,12 @@ namespace SushiPizzaServer.Controllers
                 return BadRequest("User object is null");
             }
             User userEntity = mapper.Map<UserForCreationDTO, User>(user);
-            repository.User.Create(userEntity);
+            repository.User.RegisterUser(userEntity);
             await repository.SaveAsync();
 
-            var token = await repository.User.GetJwtToken(userEntity.PhoneNumber, userEntity.Password);
+            var token = await repository.User.GetJwtToken(userEntity.PhoneNumber, user.Password);
             if (token == null)
-                return BadRequest();
+                return BadRequest("Не успел");
             logger.LogInfo("Registred new user");
             return Ok(token);
         }

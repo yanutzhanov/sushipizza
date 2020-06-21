@@ -5,24 +5,24 @@ using System.Text;
 
 namespace HashService
 {
-    public class HasherManager : IHasherManager
+    public static class HasherManager
     {
-        public string GetHashedPassword(string password)
+        public static string GetHashedPassword(string password)
         {
             return GetHashString(password);
         }
 
-        public bool VerifyPassword(string password, string hashedPassword)
+        public static bool VerifyPassword(string password, string hashedPassword)
         {
             return GetHashString(password).Equals(hashedPassword);
         }
 
-        public bool VerifyPassword(string password, User user)
+        public static bool VerifyPassword(string password, User user)
         {
             return GetHashString(password).Equals(user.Password);
         }
 
-        private string GetHashString(string s)
+        private static string GetHashString(string s)
         {
             byte[] bytes = Encoding.Unicode.GetBytes(s);
             MD5CryptoServiceProvider CSP = new MD5CryptoServiceProvider();

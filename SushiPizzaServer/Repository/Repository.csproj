@@ -8,6 +8,7 @@
     <ProjectReference Include="..\Authentication\Authentication.csproj" />
     <ProjectReference Include="..\Contracts\Contracts.csproj" />
     <ProjectReference Include="..\Entites\Entites.csproj" />
+    <ProjectReference Include="..\HashService\HashService.csproj" />
   </ItemGroup>
 
 </Project>

@@ -19,6 +19,8 @@ namespace Entites
             modelBuilder.Entity<Order>().Property(o => o.OrderTime).HasDefaultValueSql("GETDATE()");
             modelBuilder.Entity<Order>().Property(o => o.IsCompleted).HasDefaultValue(false);
             modelBuilder.Entity<User>().Property(u => u.Role).HasDefaultValue(UserRoles.User);
+            modelBuilder.Entity<User>().Property(u => u.TotalSpend).HasDefaultValue(0);
+            modelBuilder.Entity<User>().Property(u => u.Discount).HasDefaultValue(0);
         }
     }
 }

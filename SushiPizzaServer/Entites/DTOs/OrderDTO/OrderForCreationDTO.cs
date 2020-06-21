@@ -14,6 +14,7 @@ namespace Entites.DTOs.OrderDTO
 
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Интересный адрес")]
         public string Address { get; set; }
+        public double TotalPrice { get; set; }
         public int? UserId { get; set; }
     }
 }

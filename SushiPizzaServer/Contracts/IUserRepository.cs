@@ -10,5 +10,6 @@ namespace Contracts
         Task<JwtTokenResponse> GetJwtToken(string userPhoneNumber, string userPassword);
         Task<User> GetAuthenticatedUser(IIdentity identity);
         Task<User> GetUserById(int id);
+        void RegisterUser(User user);
     }
 }

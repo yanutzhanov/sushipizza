@@ -72,11 +72,6 @@ namespace SushiPizzaServer.Extensions
                     });
         }
 
-        public static void ConfigureHasherManager(this IServiceCollection services)
-        {
-            services.AddScoped<IHasherManager, HasherManager>();
-        }
-
         public static void ConfigureAutoMapper(this IServiceCollection services)
         {
             services.AddAutoMapper(typeof(Startup));
