@@ -29,7 +29,6 @@ export class ProductCardComponent implements OnInit {
     if (!this.product.imgPath) {
       this.product.imgPath = '/assets/images/philodelphia.png';
     }
-    console.log(this.product);
   }
 
   public emitEvent = (product: Product) => {

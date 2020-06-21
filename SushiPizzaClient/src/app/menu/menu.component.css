@@ -57,7 +57,7 @@ ul {
 }
 
 .header-bottom ul {
-    width: 300px;
+    margin-left: 50px;
     font-weight: 700;
 }
 
@@ -109,3 +109,16 @@ button {
     font-weight: 500;
     text-transform: uppercase;
 }
+
+.modal {
+    position: absolute;
+    z-index: 100;
+}
+
+.hidden {
+    display: none;
+}
+
+/* .bottom-nav {
+    margin-left: -190px;
+} */

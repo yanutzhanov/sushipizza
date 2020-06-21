@@ -36,6 +36,7 @@ h2 {
 .products-list {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 /* div app-product-card:not(:last-of-type) {
@@ -48,11 +49,21 @@ h2 {
     width: 0.1px;
     background-color: #000;
 }
-
-.rolls {
-    margin-bottom: 100px;
+app-product-card {
+    position: relative;
+}
+.products-list app-product-card:not(:first-of-type)::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    left: -36px;
 }
 
-.sets {
-    margin-bottom: 100px;
+@media (width: 1366px) {
+    .products-list app-product-card:not(:first-of-type)::before {
+        left: -15.8px;
+    }
 }

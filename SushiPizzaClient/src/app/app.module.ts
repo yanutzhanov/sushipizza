@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { TextMaskModule } from 'angular2-text-mask';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -11,6 +12,8 @@ import { NotFoundComponent } from './error-pages/not-found/not-found.component';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 @NgModule({
   declarations: [
@@ -20,16 +23,21 @@ import { ReactiveFormsModule } from '@angular/forms';
     ShoppingCartComponent,
     NotFoundComponent,
     ProductCardComponent,
-    FooterComponent
+    FooterComponent,
+    SignUpComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
+    TextMaskModule,
     RouterModule.forRoot([
       { path: 'home', component: HomeComponent },
       { path: '404', component: NotFoundComponent },
       { path: 'shopping-cart', component: ShoppingCartComponent },
+      { path: 'signup', component: SignUpComponent },
+      { path: 'signin', component: SignInComponent },
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: '**', redirectTo: '/404', pathMatch: 'full' }
     ])

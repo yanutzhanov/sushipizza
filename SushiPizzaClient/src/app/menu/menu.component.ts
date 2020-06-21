@@ -1,6 +1,7 @@
 import { Component, OnInit, OnChanges, SimpleChanges, OnDestroy } from '@angular/core';
 import { ShoppingCartService } from '../shared/services/shopping-cart.service';
 import { CartService } from '../shared/services/cart.service';
+import { AuthService } from '../shared/services/auth.service';
 
 @Component({
   selector: 'app-menu',
@@ -12,7 +13,7 @@ export class MenuComponent implements OnInit, OnDestroy {
   public isAuthorize: boolean;
   public itemsCount: number;
 
-  constructor(private cart: CartService) { }
+  constructor(private cart: CartService, private auth: AuthService) { }
 
   ngOnDestroy(): void {
     this.cart.itemsCountObs.unsubscribe();
@@ -20,10 +21,9 @@ export class MenuComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.isAuthorize = false;
-    if (localStorage.getItem('token')) {
+    if (sessionStorage.getItem('token')) {
       this.isAuthorize = true;
     }
-    this.isAuthorize = true;
     this.cart.itemsCountObs.subscribe(
       (res) =>
       {
@@ -31,14 +31,23 @@ export class MenuComponent implements OnInit, OnDestroy {
         console.log(res);
       }
     , err => console.log(err));
+
+    this.auth.isAuthorizedObs.subscribe(
+      res => this.isAuthorize = res,
+      err => console.error(err)
+    );
   }
 
   signOut = () => {
-    localStorage.removeItem('token');
+    this.auth.signOut();
   }
 
   calculate = () => {
     this.cart.calcTotal();
   }
 
+  showRegister = () => {
+    console.log('Workkk');
+    document.querySelector('.modal').classList.remove('.hidden');
+  }
 }

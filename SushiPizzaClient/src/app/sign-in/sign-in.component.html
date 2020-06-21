@@ -1,0 +1,20 @@
+<div class="container full-screen modal">
+    <div class="header">
+        <h1>
+            Вход
+        </h1>
+    </div>
+    <form [formGroup]="userForm" (submit)="loginUser(userForm.value)">
+        <p><input formControlName="phoneNumber" type="text" [textMask]="{mask: mask}" placeholder="Телефон"></p>
+        <p>
+            <em *ngIf="validateControl('phoneNumber') && hasError('phoneNumber', 'required') || phoneCheck(userForm.value)">Необходимо заполнить номер</em>
+        </p>
+        <p><input formControlName="password" type="password" placeholder="Пароль"></p>
+        <p>
+            <em *ngIf="validateControl('password') && hasError('password', 'required')">Необходимо заполнить пароль</em>
+            <em *ngIf="validateControl('password') && hasError('password', 'maxlength')">Максимальная длина пароля 30 символов</em>
+            <em *ngIf="validateControl('password') && hasError('password', 'maxlength')">Минимальная длина пароля 6 символов</em>
+        </p>
+        <p><button type="submit">Вход</button></p>
+    </form>
+</div>

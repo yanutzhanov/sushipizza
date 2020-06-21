@@ -15330,3 +15330,291 @@
 2020-06-21 08:13:49.8674 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
 2020-06-21 08:15:20.1667 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
 2020-06-21 08:19:54.0855 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:37:15.9351 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:38:42.5028 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:38:47.0582 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:39:35.2399 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:40:03.0053 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:41:41.9204 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:42:19.8203 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:42:31.1934 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:43:01.0432 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:44:41.8966 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:45:07.6342 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:47:10.9095 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:56:21.8244 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:56:49.6949 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:57:31.4201 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 08:57:36.3698 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 09:36:40.8701 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 09:38:02.3833 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 09:38:31.1448 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 09:38:47.7492 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 09:39:18.3590 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 09:40:07.9510 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 09:40:41.1759 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 09:40:54.8608 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 09:42:22.9720 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 09:42:34.9293 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 09:42:47.0758 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 09:42:56.8467 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 09:48:24.1658 Info AppDomain Shutting down. Logger closing...
+2020-06-21 09:48:24.5531 Debug Stopping file watching for path 'C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer' filter 'nlog.config'
+2020-06-21 09:48:24.8030 Trace Flushing all 1 targets...
+2020-06-21 09:48:24.8810 Trace ForEachItemInParallel() 1 items
+2020-06-21 09:48:24.9444 Trace FileTarget(Name=logfile): FlushAsync
+2020-06-21 09:48:24.9444 Trace Continuation invoked: 
+2020-06-21 09:48:24.9668 Trace Parallel task completed. 0 items remaining
+2020-06-21 09:48:25.0933 Debug Flush completed
+2020-06-21 09:48:25.1414 Trace FileTarget(Name=logfile): FlushAsync Done
+2020-06-21 09:48:25.1414 Debug Targets not configured for logger: LoggerService.LoggerManager
+2020-06-21 09:48:25.1864 Debug Closing logging configuration...
+2020-06-21 09:48:25.1974 Trace Closing File Target[logfile]
+2020-06-21 09:48:25.2099 Debug Closing target 'File Target[logfile]'.
+2020-06-21 09:48:25.2576 Trace FileTarget(Name=logfile): FinalizeFile 'C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt, isArchiving: False'
+2020-06-21 09:48:25.2868 Debug FileAppender Closing Invalidate - C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt
+2020-06-21 09:48:25.2868 Debug Closed target 'File Target[logfile]'.
+2020-06-21 09:48:25.3091 Trace Closing 'C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\${shortdate}_logfile.txt'
+2020-06-21 09:48:25.3196 Trace Closing Layout Renderer: ${literal}
+2020-06-21 09:48:25.3196 Trace Closing Layout Renderer: ${shortdate}
+2020-06-21 09:48:25.3583 Trace Closing Layout Renderer: ${literal}
+2020-06-21 09:48:25.3680 Trace Closing '${longdate} ${level:uppercase=true} ${message}'
+2020-06-21 09:48:25.3680 Trace Closing Layout Renderer: ${longdate}
+2020-06-21 09:48:25.3883 Trace Closing Layout Renderer: ${literal}
+2020-06-21 09:48:25.3982 Trace Closing Layout Renderer: ${uppercase}
+2020-06-21 09:48:25.4867 Trace Closing SimpleLayout=Layout Renderer: ${level}
+2020-06-21 09:48:25.4988 Trace Closing Layout Renderer: ${level}
+2020-06-21 09:48:25.5101 Trace Closing Layout Renderer: ${literal}
+2020-06-21 09:48:25.5199 Trace Closing Layout Renderer: ${message}
+2020-06-21 09:48:25.5199 Debug Finished closing logging configuration.
+2020-06-21 09:48:25.5391 Info Logger has been shut down.
+2020-06-21 11:45:56.3652 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2020-06-21 11:45:57.0296 Debug Found assembly location directory: 'C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\bin\Debug\netcoreapp3.1' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2020-06-21 11:45:57.0415 Debug Search for auto loading files in location: C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\bin\Debug\netcoreapp3.1
+2020-06-21 11:45:57.0738 Debug Start auto loading, location: C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\bin\Debug\netcoreapp3.1
+2020-06-21 11:45:57.0738 Info Auto loading assembly file: C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-06-21 11:45:57.0913 Info Loading assembly file: C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+2020-06-21 11:45:57.1565 Info NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 1.6.4.1366. Product version: 1.6.4. GlobalAssemblyCache: False
+2020-06-21 11:45:57.1647 Debug ScanAssembly('NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2020-06-21 11:45:57.1647 Info Auto loading assembly file: C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll succeeded!
+2020-06-21 11:45:57.1820 Trace Assembly 'Microsoft.Extensions.Logging, Version=3.1.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2020-06-21 11:45:57.1820 Trace Assembly 'Microsoft.Extensions.Logging.Abstractions, Version=3.1.4.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' will be hidden in callsite stacktrace
+2020-06-21 11:45:57.1978 Trace Assembly 'NLog.Extensions.Logging, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c' will be hidden in callsite stacktrace
+2020-06-21 11:45:57.1978 Debug Auto loading done
+2020-06-21 11:45:57.2134 Info Message Template Auto Format enabled
+2020-06-21 11:45:57.2651 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-06-21 11:45:57.2760 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-06-21 11:45:57.3021 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2020-06-21 11:45:57.3200 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2020-06-21 11:45:57.3288 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-06-21 11:45:57.3371 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-06-21 11:45:57.3371 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-06-21 11:45:57.3529 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-06-21 11:45:57.3529 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2020-06-21 11:45:57.3689 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-06-21 11:45:57.3689 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-06-21 11:45:57.3850 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-06-21 11:45:57.3850 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-06-21 11:45:57.3995 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2020-06-21 11:45:57.3995 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-06-21 11:45:57.4144 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-06-21 11:45:57.4523 Debug Setting 'NLog.Targets.FileTarget.name' to 'logfile'
+2020-06-21 11:45:57.4523 Debug Setting 'NLog.Targets.FileTarget.fileName' to 'C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\${shortdate}_logfile.txt'
+2020-06-21 11:45:57.4669 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-06-21 11:45:57.4669 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-06-21 11:45:57.4815 Debug Setting 'NLog.Targets.FileTarget.layout' to '${longdate} ${level:uppercase=true} ${message}'
+2020-06-21 11:45:57.4815 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-06-21 11:45:57.4951 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-06-21 11:45:57.4951 Debug Setting 'NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2020-06-21 11:45:57.5083 Trace Wrapping NLog.LayoutRenderers.LevelLayoutRenderer with NLog.LayoutRenderers.Wrappers.UppercaseLayoutRendererWrapper
+2020-06-21 11:45:57.5083 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-06-21 11:45:57.5083 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-06-21 11:45:57.5276 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-06-21 11:45:57.5276 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-06-21 11:45:57.5400 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2020-06-21 11:45:57.5400 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-06-21 11:45:57.5400 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-06-21 11:45:57.5564 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-06-21 11:45:57.5564 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-06-21 11:45:57.5564 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-06-21 11:45:57.5743 Info Adding target FileTarget(Name=logfile)
+2020-06-21 11:45:57.5743 Debug Registered target logfile: NLog.Targets.FileTarget
+2020-06-21 11:45:57.5862 Trace ParseRulesElement
+2020-06-21 11:45:57.6036 Debug Watching path 'C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer' filter 'nlog.config' for changes.
+2020-06-21 11:45:57.6036 Debug --- NLog configuration dump ---
+2020-06-21 11:45:57.6036 Debug Targets:
+2020-06-21 11:45:57.6217 Debug File Target[logfile]
+2020-06-21 11:45:57.6217 Debug Rules:
+2020-06-21 11:45:57.6340 Debug logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]
+2020-06-21 11:45:57.6340 Debug --- End of NLog configuration dump ---
+2020-06-21 11:45:57.6340 Trace FindReachableObject<System.Object>:
+2020-06-21 11:45:57.6533 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Debug Info Warn Error Fatal ] appendTo: [ logfile ]'
+2020-06-21 11:45:57.6533 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2020-06-21 11:45:57.6649 Trace  Scanning FileTarget 'File Target[logfile]'
+2020-06-21 11:45:57.6649 Trace   Scanning Property FileName ''C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\${shortdate}_logfile.txt'' NLog.Layouts
+2020-06-21 11:45:57.6649 Trace   Scanning SimpleLayout ''C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\${shortdate}_logfile.txt''
+2020-06-21 11:45:57.6862 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-06-21 11:45:57.6862 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-06-21 11:45:57.6994 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-06-21 11:45:57.6994 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-06-21 11:45:57.7120 Trace   Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2020-06-21 11:45:57.7120 Trace   Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2020-06-21 11:45:57.7120 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-06-21 11:45:57.7302 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-06-21 11:45:57.7302 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-06-21 11:45:57.7423 Trace    Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-06-21 11:45:57.7423 Trace     Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2020-06-21 11:45:57.7423 Trace     Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-06-21 11:45:57.7597 Trace      Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-06-21 11:45:57.7597 Trace      Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-06-21 11:45:57.7597 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-06-21 11:45:57.7787 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-06-21 11:45:57.7787 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2020-06-21 11:45:57.7916 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2020-06-21 11:45:57.7916 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2020-06-21 11:45:57.8055 Info Validating config: TargetNames=logfile, ConfigItems=14, FilePath=C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer/nlog.config
+2020-06-21 11:45:57.8055 Debug Unused target checking is started... Rule Count: 1, Target Count: 1
+2020-06-21 11:45:57.8222 Debug Unused target checking is completed. Total Rule Count: 1, Total Target Count: 1, Unused Target Count: 0
+2020-06-21 11:45:57.8222 Trace Initializing Layout Renderer: ${message}
+2020-06-21 11:45:57.8222 Trace Initializing Layout Renderer: ${literal}
+2020-06-21 11:45:57.8407 Trace Initializing Layout Renderer: ${level}
+2020-06-21 11:45:57.8407 Trace Initializing SimpleLayout=Layout Renderer: ${level}
+2020-06-21 11:45:57.8543 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-06-21 11:45:57.8543 Trace Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-06-21 11:45:57.8543 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-06-21 11:45:57.8716 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-06-21 11:45:58.0039 Trace Initializing Layout Renderer: ${uppercase}
+2020-06-21 11:45:58.0251 Trace Initializing Layout Renderer: ${literal}
+2020-06-21 11:45:58.0251 Trace Initializing Layout Renderer: ${longdate}
+2020-06-21 11:45:58.0469 Trace Initializing '${longdate} ${level:uppercase=true} ${message}'
+2020-06-21 11:45:58.0543 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-06-21 11:45:58.0543 Trace Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2020-06-21 11:45:58.0543 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-06-21 11:45:58.0730 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2020-06-21 11:45:58.0730 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-06-21 11:45:58.0851 Trace  Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2020-06-21 11:45:58.0851 Trace   Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2020-06-21 11:45:58.0851 Trace   Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2020-06-21 11:45:58.1025 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-06-21 11:45:58.1025 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2020-06-21 11:45:58.1025 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-06-21 11:45:58.1189 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2020-06-21 11:45:58.1189 Trace Initializing Layout Renderer: ${literal}
+2020-06-21 11:45:58.1189 Trace Initializing Layout Renderer: ${shortdate}
+2020-06-21 11:45:58.1354 Trace Initializing Layout Renderer: ${literal}
+2020-06-21 11:45:58.1354 Trace Initializing 'C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\${shortdate}_logfile.txt'
+2020-06-21 11:45:58.1354 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2020-06-21 11:45:58.1525 Trace Scanning SimpleLayout ''C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\${shortdate}_logfile.txt''
+2020-06-21 11:45:58.1525 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2020-06-21 11:45:58.1662 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-06-21 11:45:58.1662 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2020-06-21 11:45:58.1800 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2020-06-21 11:45:58.1800 Trace Initializing File Target[logfile]
+2020-06-21 11:45:58.1800 Trace FindReachableObject<NLog.Layouts.Layout>:
+2020-06-21 11:45:58.2005 Trace Scanning FileTarget 'File Target[logfile]'
+2020-06-21 11:45:58.2005 Trace  Scanning Property FileName ''C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\${shortdate}_logfile.txt'' NLog.Layouts
+2020-06-21 11:45:58.2145 Trace  Scanning SimpleLayout ''C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\${shortdate}_logfile.txt''
+2020-06-21 11:45:58.2145 Trace  Scanning Property Layout ''${longdate} ${level:uppercase=true} ${message}'' NLog.Layouts
+2020-06-21 11:45:58.2265 Trace  Scanning SimpleLayout ''${longdate} ${level:uppercase=true} ${message}''
+2020-06-21 11:45:58.2265 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2020-06-21 11:45:58.2265 Trace File Target[logfile] has 2 layouts
+2020-06-21 11:45:58.2466 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2020-06-21 11:46:03.5156 Debug Targets for LoggerService.LoggerManager by level:
+2020-06-21 11:46:03.5577 Debug Trace =>
+2020-06-21 11:46:03.5577 Debug Debug => logfile
+2020-06-21 11:46:03.5791 Debug Info => logfile
+2020-06-21 11:46:03.5870 Debug Warn => logfile
+2020-06-21 11:46:03.5870 Debug Error => logfile
+2020-06-21 11:46:03.6008 Debug Fatal => logfile
+2020-06-21 11:46:03.6816 Debug FileTarget(Name=logfile): Preparing for new file 'C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt'
+2020-06-21 11:46:03.7470 Debug Creating file appender: C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt
+2020-06-21 11:46:03.7693 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 11:46:22.5187 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 11:48:12.3857 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 11:50:54.4245 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:05:30.4569 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:08:50.5222 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:17:10.2981 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:18:19.2561 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:26:45.4671 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:26:50.5935 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:26:54.7484 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:27:09.8475 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:27:52.1403 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:28:02.7408 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:28:48.9583 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:29:09.9249 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:29:22.5084 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:31:47.8507 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:32:02.5677 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:32:07.6418 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:32:11.0785 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:34:26.4151 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:35:00.8990 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:35:49.5019 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:36:02.9249 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:36:37.3400 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:36:46.7963 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:37:20.3483 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:37:25.9200 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:39:07.3289 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:40:07.9302 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:40:22.4361 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:40:43.7827 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:40:51.5539 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:41:00.5022 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:41:57.8050 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:42:23.5178 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:42:28.1395 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:42:30.7002 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:42:33.8199 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:42:37.8352 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:43:32.4984 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:43:36.8126 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:45:00.0466 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:45:19.4083 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:45:34.4845 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:45:54.7017 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:46:02.7561 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:46:09.5293 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:46:23.2917 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:46:38.6416 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:46:43.7589 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:46:49.2453 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:47:02.3089 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:47:07.9560 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:47:13.3848 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:47:19.9704 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:47:23.7185 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:47:35.7299 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:47:42.4016 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:48:01.5983 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:48:12.7299 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:48:17.0176 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:48:28.2239 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:48:33.3387 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:55:28.4862 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:56:05.8282 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:56:57.4526 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:57:21.4415 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 12:59:59.6839 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:00:55.5292 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:01:20.7944 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:01:25.0912 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:01:31.2763 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:01:37.2387 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:01:41.8429 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:02:03.0554 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:02:13.4612 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:02:26.8664 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:02:52.4855 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:03:23.0513 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:05:34.2933 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:06:02.7784 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:07:34.7463 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:07:45.2553 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:21:48.6122 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:22:54.9909 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:48:03.4662 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 13:51:22.0932 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False
+2020-06-21 14:05:59.0645 Trace Opening C:\Users\Ян\Desktop\sushipizza\SushiPizzaServer\SushiPizzaServer\Logs\logs\2020-06-21_logfile.txt with allowFileSharedWriting=False

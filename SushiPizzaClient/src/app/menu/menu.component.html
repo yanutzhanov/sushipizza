@@ -10,15 +10,15 @@
         <ul>
             <li><a [routerLink]="['/home']" routerLinkActive="active"
                     [routerLinkActiveOptions]="{exact: true}">Главная</a></li>
-            <li><a [routerLink]="['/contacts']">Контакты</a></li>
-            <li><a [routerLink]="['/delivery']">Доставка</a></li>
+            <li><a [routerLink]="['/contacts']" routerLinkActive="active">Контакты</a></li>
+            <li><a [routerLink]="['/delivery']" routerLinkActive="active">Доставка</a></li>
         </ul>
         <ul class="auth" *ngIf="!isAuthorize">
-            <li><a [routerLink]="['/signin']">Вход</a></li> |
-            <li><a [routerLink]="['/signup']">Регистрация</a></li>
+            <li><a [routerLink]="['/signin']" routerLinkActive="active">Вход</a></li> |
+            <li><a [routerLink]="['/signup']" routerLinkActive="active">Регистрация</a></li>
         </ul>
         <ul class="auth" *ngIf="isAuthorize">
-            <li><a [routerLink]="['/account']">Аккаунт</a></li> |
+            <li><a [routerLink]="['/account']" routerLinkActive="active">Аккаунт</a></li> |
             <li><button type="button" (click)="signOut()">Выход</button></li>
         </ul>
     </div>
@@ -30,19 +30,24 @@
             </span>
         </div>
         
-        <ul>
-            <li><a href="#">Роллы</a></li>
-            <li><a href="#">Сеты</a></li>
+        <ul class="bottom-nav">
+            <li><a [routerLink]="['/rolls']" routerLinkActive="active">Роллы</a></li>
+            <li><a [routerLink]="['/sets']" routerLinkActive="active">Сеты</a></li>
+            <li><a [routerLink]="['/pizzas']" routerLinkActive="active">Пицца</a></li>
+            <li><a [routerLink]="['/salads']" routerLinkActive="active">Салаты</a></li>
+            <li><a [routerLink]="['/drinks']" routerLinkActive="active">Напитки</a></li>
         </ul>
 
         <div class="cart">
             <span class="material-icons">
                 shopping_cart
             </span>
-            <a [routerLink]="['/shopping-cart']" class="shopping-cart" (click)="calculate()">Корзина</a>
+            <a [routerLink]="['/shopping-cart']" class="shopping-cart" (click)="calculate()" routerLinkActive="active">Корзина</a>
             <div class="notify">
                 {{ itemsCount }}
             </div>
         </div>
     </div>
 </nav>
+
+<app-sign-up class="modal hidden"></app-sign-up>
