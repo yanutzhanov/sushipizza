@@ -1,5 +1,6 @@
 import { Component, OnInit, OnChanges, SimpleChanges, OnDestroy } from '@angular/core';
 import { ShoppingCartService } from '../shared/services/shopping-cart.service';
+import { CartService } from '../shared/services/cart.service';
 
 @Component({
   selector: 'app-menu',
@@ -11,7 +12,7 @@ export class MenuComponent implements OnInit, OnDestroy {
   public isAuthorize: boolean;
   public itemsCount: number;
 
-  constructor(private cart: ShoppingCartService) { }
+  constructor(private cart: CartService) { }
 
   ngOnDestroy(): void {
     this.cart.itemsCountObs.unsubscribe();
@@ -24,12 +25,20 @@ export class MenuComponent implements OnInit, OnDestroy {
     }
     this.isAuthorize = true;
     this.cart.itemsCountObs.subscribe(
-      (res) => this.itemsCount = res
+      (res) =>
+      {
+        this.itemsCount = res;
+        console.log(res);
+      }
     , err => console.log(err));
   }
 
   signOut = () => {
     localStorage.removeItem('token');
+  }
+
+  calculate = () => {
+    this.cart.calcTotal();
   }
 
 }

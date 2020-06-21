@@ -39,7 +39,7 @@
             <span class="material-icons">
                 shopping_cart
             </span>
-            <a [routerLink]="['/shopping-cart']" class="shopping-cart">Корзина</a>
+            <a [routerLink]="['/shopping-cart']" class="shopping-cart" (click)="calculate()">Корзина</a>
             <div class="notify">
                 {{ itemsCount }}
             </div>

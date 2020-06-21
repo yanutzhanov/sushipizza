@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../interfaces/product.model';
 import { RepositoryService } from '../shared/services/repository.service';
 import { ShoppingCartService } from '../shared/services/shopping-cart.service';
+import { CartService, Actions } from '../shared/services/cart.service';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,7 @@ export class HomeComponent implements OnInit {
   public products: Product[];
   public sushis: Product[];
 
-  constructor(private repo: RepositoryService, private cart: ShoppingCartService) { }
+  constructor(private repo: RepositoryService, private cart: CartService) { }
 
   ngOnInit(): void {
     this.repo.getData('api/products').subscribe(
@@ -34,7 +35,7 @@ export class HomeComponent implements OnInit {
   }
 
   addProductToShoppingCart = (product: Product) => {
-    this.cart.addToCart(product);
+    this.cart.makeAction(Actions.add, product);
   }
 
 }

@@ -4,6 +4,7 @@ import { Order } from '../interfaces/order.model';
 import { Product } from '../interfaces/product.model';
 import { ShoppingCartService } from '../shared/services/shopping-cart.service';
 import { RepositoryService } from '../shared/services/repository.service';
+import { CartService, Actions } from '../shared/services/cart.service';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -15,10 +16,10 @@ export class ShoppingCartComponent implements OnInit {
   public order: Order;
   public orderForm: FormGroup;
 
-  constructor(public cart: ShoppingCartService, private repo: RepositoryService) { }
+  constructor(public cart: CartService, private repo: RepositoryService) { }
 
   ngOnInit(): void {
-    this.cart.updateProductMap();
+    // this.cart.updateProductMap();
     this.orderForm = new FormGroup({
       address: new FormControl('', [Validators.required, Validators.maxLength(50)]),
       phoneNumber: new FormControl('', [Validators.required, Validators.maxLength(20)])
@@ -42,10 +43,10 @@ export class ShoppingCartComponent implements OnInit {
   }
 
   increaseCount = (product: Product)  => {
-    this.cart.increaseCountOfProduct(product);
+    this.cart.makeAction(Actions.add, product);
   }
 
   decreaseCount = (product: Product) => {
-    this.cart.decreaseCountOfProduct(product);
+    this.cart.makeAction(Actions.remove, product);
   }
 }

@@ -9,7 +9,7 @@
                     <th>Кол-во</th>
                     <th>Цена</th>
                 </tr>
-                <tr *ngFor="let product of this.cart.productMap.keys()">
+                <tr *ngFor="let product of this.cart.products">
                     <td>
                         <p>{{ product.name }}</p>
                         <p><img src="{{ product.imgPath }}" alt=""></p>
@@ -18,12 +18,12 @@
                         <span class="material-icons" (click)="decreaseCount(product)">
                             remove_circle_outline
                         </span>
-                        <span class="count">{{ cart.productMap.get(product) }}</span>
+                        <span class="count">{{ product.count }}</span>
                         <span class="material-icons" (click)="increaseCount(product)">
                             add_circle_outline
                         </span>
                     </td>
-                    <td class="productSum">{{ product.price * cart.productMap.get(product) }}</td>
+                    <td class="productSum">{{ product.price * product.count }}</td>
                 </tr>
             </table>
         </div>
