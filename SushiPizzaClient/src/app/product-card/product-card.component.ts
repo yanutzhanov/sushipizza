@@ -26,9 +26,10 @@ export class ProductCardComponent implements OnInit {
         type: 'Суши'
       };
     }
-    if (!this.product.imgPath) {
-      this.product.imgPath = '/assets/images/philodelphia.png';
-    }
+  }
+
+  public getImgPath = () => {
+    return `http://localhost:5000/${this.product.imgPath}`;
   }
 
   public emitEvent = (product: Product) => {

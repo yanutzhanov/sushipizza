@@ -14,6 +14,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { SignInComponent } from './sign-in/sign-in.component';
     ProductCardComponent,
     FooterComponent,
     SignUpComponent,
-    SignInComponent
+    SignInComponent,
+    ContactsComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +42,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
       { path: 'shopping-cart', component: ShoppingCartComponent },
       { path: 'signup', component: SignUpComponent },
       { path: 'signin', component: SignInComponent },
+      { path: 'contacts', component: ContactsComponent },
+      { path: 'product-list/:type', component: ProductListComponent },
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: '**', redirectTo: '/404', pathMatch: 'full' }
     ])

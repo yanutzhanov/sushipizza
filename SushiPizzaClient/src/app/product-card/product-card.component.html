@@ -1,7 +1,8 @@
 <div class="card">
-    <img src="{{ product.imgPath }}" alt="">
+    <img *ngIf="product" src="{{ getImgPath() }}" alt="" />
     <h3>{{ product.name }}</h3>
-    <p>{{ product.composition }}</p>
-    <p>{{ product.portion }} | <span>{{ product.price }} тг</span></p>
+    <p class="comp">{{ product.composition }}</p>
+    <p *ngIf="product.portion">{{ product.portion }} | <span>{{ product.price }} тг</span></p>
+    <p *ngIf="!product.portion"> <span>{{ product.price }} тг</span></p>
     <button type="button" (click)="emitEvent(product)">В корзину</button>
 </div>

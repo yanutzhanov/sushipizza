@@ -10,7 +10,9 @@ h3 {
     font-family: 'Lato', sans-serif;
     margin-bottom: 10px;
 }
-
+.comp {
+    height: 70px;
+}
 p:first-of-type {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;

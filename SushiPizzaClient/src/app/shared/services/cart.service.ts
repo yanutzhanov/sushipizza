@@ -33,6 +33,10 @@ export class CartService {
 
   }
 
+  public getImgPath = (product: Product) => {
+    return `http://localhost:5000/${product.imgPath}`;
+  }
+
   private setCount = () => {
     this.itemsCountObs.next(this.productIds.length);
   }

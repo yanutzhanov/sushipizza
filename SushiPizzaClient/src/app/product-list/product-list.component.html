@@ -1,0 +1,4 @@
+<div class="container full-screen">
+    <app-product-card *ngFor="let product of currentProducts"
+         [product]="product" (onClick)="addToCart($event)"></app-product-card>
+</div>

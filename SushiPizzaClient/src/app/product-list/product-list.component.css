@@ -1,0 +1,13 @@
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 25%;
+    flex-wrap: wrap;
+}
+
+app-product-card {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}

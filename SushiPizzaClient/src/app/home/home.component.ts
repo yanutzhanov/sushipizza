@@ -15,6 +15,7 @@ export class HomeComponent implements OnInit {
   public products: Product[];
   public sushis: Product[];
   public pizzas: Product[];
+  public sets: Product[];
 
   constructor(private repo: RepositoryService, private cart: CartService, private data: DataService) { }
 
@@ -23,6 +24,7 @@ export class HomeComponent implements OnInit {
       this.products = res;
       this.sushis = this.products.filter(p => p.type === 'Суши').slice(0, 4);
       this.pizzas = this.products.filter(p => p.type === 'Пицца').slice(0, 4);
+      this.sets = this.products.filter(p => p.type === 'Сет').slice(0, 4);
     });
   }
 

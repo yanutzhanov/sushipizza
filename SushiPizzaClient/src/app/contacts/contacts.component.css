@@ -1,0 +1,18 @@
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 24px;
+}

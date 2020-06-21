@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="rolls">
-        <h2><a [routerLink]="['/rolls']">Роллы</a></h2>
+        <h2><a [routerLink]="['/product-list/rolls']">Роллы</a></h2>
         <div class="products-list">
             <app-product-card *ngFor="let sushi of sushis"
             [product]="sushi" (onClick)="addProductToShoppingCart($event)"></app-product-card>
@@ -23,20 +23,15 @@
     </div>
     
     <div class="sets">
-        <h2><a [routerLink]="['/sets']">Сеты</a></h2>
+        <h2><a [routerLink]="['/product-list/sets']">Сеты</a></h2>
         <div class="products-list">
-            <app-product-card></app-product-card>
-            
-            <app-product-card></app-product-card>
-            
-            <app-product-card></app-product-card>
-            
-            <app-product-card></app-product-card>
+            <app-product-card *ngFor="let set of sets"
+            [product]="set" (onClick)="addProductToShoppingCart($event)"></app-product-card>
         </div>
     </div>
 
     <div class="pizzas">
-        <h2><a [routerLink]="['/pizzas']">Пицца</a></h2>
+        <h2><a [routerLink]="['/product-list/pizzas']">Пицца</a></h2>
         <div class="products-list">
             <app-product-card *ngFor="let pizza of pizzas"
             [product]="pizza" (onClick)="addProductToShoppingCart($event)"></app-product-card>
@@ -44,7 +39,7 @@
     </div>
 
     <div class="drinks">
-        <h2><a [routerLink]="['/drinks']">Напитки</a></h2>
+        <h2><a [routerLink]="['/product-list/drinks']">Напитки</a></h2>
         <div class="products-list">
             <app-product-card></app-product-card>
             
