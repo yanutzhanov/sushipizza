@@ -52,7 +52,7 @@ export class RepositoryService {
 
   private generateHeadersWithAuth = () => {
     return {
-      headers: new HttpHeaders({'Content-Type': 'application/json'}).set('Authorization', `Bearer ${localStorage.getItem('token')}`)
+      headers: new HttpHeaders({'Content-Type': 'application/json'}).set('Authorization', `Bearer ${sessionStorage.getItem('token')}`)
     };
   }
 }

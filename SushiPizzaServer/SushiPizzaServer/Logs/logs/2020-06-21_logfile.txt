@@ -349,3 +349,34 @@ Error Number:-2,State:0,Class:11
 2020-06-21 16:13:47.5205 INFO Returned all products in GetProducts method from database
 2020-06-21 16:14:17.1462 INFO Returned all products in GetProducts method from database
 2020-06-21 16:15:16.4092 INFO Returned all products in GetProducts method from database
+2020-06-21 16:20:12.3377 INFO Returned all products in GetProducts method from database
+2020-06-21 16:33:19.6024 INFO User signin complete
+2020-06-21 16:33:19.6024 INFO User signin complete
+2020-06-21 16:44:06.8046 INFO User signin complete
+2020-06-21 16:44:06.8046 INFO User signin complete
+2020-06-21 16:48:03.9740 INFO User signin complete
+2020-06-21 16:53:55.3677 INFO User signin complete
+2020-06-21 16:56:02.6435 INFO User signin complete
+2020-06-21 17:00:40.4963 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:04:22.5421 INFO User signin complete
+2020-06-21 17:04:31.8720 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:04:38.9107 INFO Returned all products in GetProducts method from database
+2020-06-21 17:05:26.0821 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:06:01.2384 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:06:12.5879 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:07:00.6243 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:07:19.5354 INFO User signin complete
+2020-06-21 17:08:25.5374 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:08:35.4879 INFO User signin complete
+2020-06-21 17:08:35.5207 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:08:44.2327 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:10:05.9288 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:12:00.4390 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:12:56.8002 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:13:32.0201 INFO User signin complete
+2020-06-21 17:13:32.0520 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:13:41.3662 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:14:19.1674 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:14:27.4763 INFO Succesfully returned information about user with id: 9
+2020-06-21 17:14:36.5624 INFO User signin complete
+2020-06-21 17:14:36.5964 INFO Succesfully returned information about user with id: 9

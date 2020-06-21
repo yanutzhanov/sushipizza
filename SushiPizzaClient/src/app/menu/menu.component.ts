@@ -1,5 +1,4 @@
 import { Component, OnInit, OnChanges, SimpleChanges, OnDestroy } from '@angular/core';
-import { ShoppingCartService } from '../shared/services/shopping-cart.service';
 import { CartService } from '../shared/services/cart.service';
 import { AuthService } from '../shared/services/auth.service';
 import { NgModel, NgControl } from '@angular/forms';

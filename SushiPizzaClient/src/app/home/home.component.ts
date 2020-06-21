@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../interfaces/product.model';
 import { RepositoryService } from '../shared/services/repository.service';
-import { ShoppingCartService } from '../shared/services/shopping-cart.service';
 import { CartService, Actions } from '../shared/services/cart.service';
 import { DataService } from '../shared/services/data.service';
 

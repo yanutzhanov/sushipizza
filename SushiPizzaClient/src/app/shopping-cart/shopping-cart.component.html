@@ -30,10 +30,10 @@
         <div class="deliver-info">
             <form [formGroup]="orderForm" novalidate (ngSubmit)="createOrder(orderForm.value)">
                 <p>
-                    <input formControlName="address" type="text" id="address" placeholder="Адрес" />
+                    <input formControlName="address" type="text" id="address" placeholder="Адрес" [(ngModel)]="this.address" />
                 </p>
                 <p>
-                    <input formControlName="phoneNumber" type="text" id="phoneNumber" placeholder="Телефон"/>
+                    <input formControlName="phoneNumber" type="text" id="phoneNumber" placeholder="Телефон" [(ngModel)]="this.phoneNumber">
                 </p>
 
                 <p class="total-sum">

@@ -15,12 +15,5 @@ namespace Entites.DTOs.UserDTO
 
         [StringLength(30, ErrorMessage = "Больше 30 это много")]
         public string Address { get; set; }
-
-        [Required(ErrorMessage = "Регаешься регайся до конца")]
-        [StringLength(30, MinimumLength = 6, ErrorMessage = "Что у тебя за пароль?")]
-        public string Password { get; set; }
-
-        [Required(ErrorMessage = "Роль важна")]
-        public string Role { get; set; }
     }
 }
