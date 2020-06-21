@@ -3,15 +3,31 @@ tr, th, td {
     align-items: center;
     vertical-align: middle;
 }
+th {
+    padding-bottom: 20px;
+}
 .orders {
     font-family: 'Montserrat', sans-serif;
 
 }
+tr td:first-of-type, tr th:first-of-type {
+    width: 50%;
+}
+tr td:last-of-type, tr th:last-of-type {
+    width: 25%;
+}
 td span {
     cursor: pointer;
+    font-size: 20px;
 }
 th {
     font-weight: 500;
+}
+tr img {
+    margin-top: 5px;
+}
+tr:not(:last-of-type) img {
+    margin-bottom: 20px;
 }
 th:first-of-type {
     text-align: left;
@@ -22,6 +38,12 @@ tr td:first-of-type {
     text-transform: uppercase;
     text-align: left;
 }
+td .count {
+    font-size: 28px;
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: default;
+}
 table {
     width: 100%;
 }
@@ -29,6 +51,7 @@ table {
     width: 60%;
     padding-right: 70px;
     border-right: 1px solid black;
+    margin-bottom: 60px;
 }
 .deliver-info {
     width: 20%;
@@ -61,7 +84,9 @@ input {
     font-weight: bold;
     font-size: 20px;
 }
-
+.productSum {
+    font-size: 24px;
+}
 .total-sum span {
     font-weight: 500;
     font-size: 20px;
@@ -81,4 +106,9 @@ input {
     border: none;
     margin-top: 40px;
     cursor: pointer;
+}
+
+img {
+    width: 200px;
+    height: 130px;
 }

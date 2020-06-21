@@ -23,7 +23,7 @@ export class MenuComponent implements OnInit, OnDestroy {
       this.isAuthorize = true;
     }
     this.isAuthorize = true;
-    const count = this.cart.itemsCountObs.subscribe(
+    this.cart.itemsCountObs.subscribe(
       (res) => this.itemsCount = res
     , err => console.log(err));
   }

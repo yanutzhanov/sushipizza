@@ -12,7 +12,6 @@ export class ShoppingCartService {
   public products: Product[];
   public itemsCount: number;
   public productMap: Map<Product, number>;
-  public productMapKeys: any;
   public itemsCountObs: BehaviorSubject<number>;
 
   constructor() {
@@ -21,6 +20,7 @@ export class ShoppingCartService {
     this.products = [];
     this.itemsCount = 0;
     this.productMap = new Map<Product, number>();
+
     if (localStorage.getItem('productsIds') === null) {
       localStorage.setItem('productsIds', JSON.stringify([]));
     }
@@ -137,7 +137,5 @@ export class ShoppingCartService {
     for (const pm of productsmap.entries()) {
       this.productMap.set(JSON.parse(pm[0]), pm[1]);
     }
-
-    this.productMapKeys = this.productMap.keys();
   }
 }

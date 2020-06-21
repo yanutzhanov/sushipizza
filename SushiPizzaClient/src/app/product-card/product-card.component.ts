@@ -18,13 +18,16 @@ export class ProductCardComponent implements OnInit {
     if (!this.product) {
       this.product = {
         id: 0,
-        img: '/assets/images/calif.png',
+        imgPath: '/assets/images/calif.png',
         name: 'Калифорния с креветкой',
         composition: 'Состав: Креветка, Авокадо, Огурец,Икра масаго, Нори, Рис ',
-        count: '8 шт',
+        portion: '8 шт',
         price: 1080,
         type: 'Суши'
       };
+    }
+    if (!this.product.imgPath) {
+      this.product.imgPath = '/assets/images/philodelphia.png';
     }
     console.log(this.product);
   }

@@ -20,5 +20,10 @@ namespace Entites.Models
         [Required(ErrorMessage = "Тип продукта обязателен")]
         [StringLength(10, ErrorMessage = "Все типы меньше 10 символов, серьезно")]
         public string Type { get; set; }
+
+        public string ImgPath { get; set; }
+
+        [StringLength(20, ErrorMessage = "Больше 20 это норм?")]
+        public string Portion { get; set; }
     }
 }

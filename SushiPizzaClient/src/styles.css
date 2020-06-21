@@ -28,3 +28,6 @@ li {
     min-height: 70vh;
 }
 
+button {
+    cursor: pointer;
+}

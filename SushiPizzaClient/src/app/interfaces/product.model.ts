@@ -1,9 +1,9 @@
 export interface Product {
     id: number;
-    img?: string;
+    imgPath?: string;
     name: string;
     composition: string;
     price: number;
-    count?: string;
+    portion: string;
     type: string;
 }

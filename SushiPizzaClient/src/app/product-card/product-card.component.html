@@ -1,7 +1,7 @@
 <div class="card">
-    <img src="{{ product.img }}" alt="">
+    <img src="{{ product.imgPath }}" alt="">
     <h3>{{ product.name }}</h3>
     <p>{{ product.composition }}</p>
-    <p>{{ product.count }} | <span>{{ product.price }} тг</span></p>
+    <p>{{ product.portion }} | <span>{{ product.price }} тг</span></p>
     <button type="button" (click)="emitEvent(product)">В корзину</button>
 </div>

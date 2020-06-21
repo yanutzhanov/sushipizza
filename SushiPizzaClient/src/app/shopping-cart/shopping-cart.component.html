@@ -9,28 +9,31 @@
                     <th>Кол-во</th>
                     <th>Цена</th>
                 </tr>
-                <tr *ngFor="let product of cart.productMapKeys">
-                    <td>{{ product.name }}</td>
+                <tr *ngFor="let product of this.cart.productMap.keys()">
+                    <td>
+                        <p>{{ product.name }}</p>
+                        <p><img src="{{ product.imgPath }}" alt=""></p>
+                    </td>
                     <td>
                         <span class="material-icons" (click)="decreaseCount(product)">
                             remove_circle_outline
                         </span>
-                        {{ cart.productMap.get(product) }}
+                        <span class="count">{{ cart.productMap.get(product) }}</span>
                         <span class="material-icons" (click)="increaseCount(product)">
                             add_circle_outline
                         </span>
                     </td>
-                    <td>{{ product.price * cart.productMap.get(product) }}</td>
+                    <td class="productSum">{{ product.price * cart.productMap.get(product) }}</td>
                 </tr>
             </table>
         </div>
         <div class="deliver-info">
-            <form action="">
+            <form [formGroup]="orderForm" novalidate (ngSubmit)="createOrder(orderForm.value)">
                 <p>
-                    <input type="text" id="address" placeholder="Адрес" />
+                    <input formControlName="address" type="text" id="address" placeholder="Адрес" />
                 </p>
                 <p>
-                    <input type="text" id="phoneNumber" placeholder="Телефон"/>
+                    <input formControlName="phoneNumber" type="text" id="phoneNumber" placeholder="Телефон"/>
                 </p>
 
                 <p class="total-sum">
@@ -38,7 +41,7 @@
                 </p>
                 
                 <p class="send-order">
-                    <button type="button" class="send-order-btn">
+                    <button type="submit" class="send-order-btn">
                         Оформить заказ
                     </button>
                 </p>

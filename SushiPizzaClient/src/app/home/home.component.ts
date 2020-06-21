@@ -17,11 +17,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.repo.getData('api/products').subscribe(
-      res =>  {
+      res => {
         this.products = res as Product[];
         console.log(this.products);
         if (this.products && this.products.length > 3){
-          this.sushis = this.products.filter(p => p.type === 'Суши').slice(1, 5);
+          this.sushis = this.products.filter(p => p.type === 'Суши').slice(0, 4);
           console.log(this.sushis);
         }
         else {
