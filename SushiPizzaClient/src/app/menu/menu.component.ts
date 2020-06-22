@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class MenuComponent implements OnInit, OnDestroy {
 
   public isAuthorize: boolean;
-  public itemsCount: number;
+  public itemsCount = 0;
   public searchText: string;
 
   constructor(private cart: CartService, private auth: AuthService, private router: Router) { }
