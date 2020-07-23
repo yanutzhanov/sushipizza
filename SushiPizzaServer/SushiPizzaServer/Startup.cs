@@ -33,7 +33,8 @@ namespace SushiPizzaServer
         {
             services.ConfigureCORS();
             services.ConfigureLoggerService();
-            services.ConfigureMsSqlLocalContext(Configuration);
+            // services.ConfigureMsSqlLocalContext(Configuration);
+            services.ConfigurePostgreSqlContext(Configuration);
             services.ConfigureRepositoryWrapper();
             services.ConfigureAuthenticationWithJwtBearer();
             services.ConfigureAutoMapper();
@@ -63,7 +64,7 @@ namespace SushiPizzaServer
 
             app.UseHttpsRedirection();
 
-            app.UseCors("CorsPolicy");
+            app.UseCors("CORS");
             app.UseStaticFiles();
 
             app.UseRouting();

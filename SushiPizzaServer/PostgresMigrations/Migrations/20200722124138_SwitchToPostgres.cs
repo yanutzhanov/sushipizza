@@ -1,9 +1,10 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace Entites.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class SwitchToPostgres : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,11 +13,13 @@ namespace Entites.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Name = table.Column<string>(maxLength: 30, nullable: false),
                     Composition = table.Column<string>(maxLength: 120, nullable: false),
                     Price = table.Column<double>(nullable: false),
-                    Type = table.Column<string>(maxLength: 10, nullable: false)
+                    Type = table.Column<string>(maxLength: 10, nullable: false),
+                    ImgPath = table.Column<string>(nullable: true),
+                    Portion = table.Column<string>(maxLength: 20, nullable: true)
                 },
                 constraints: table =>
                 {
@@ -24,20 +27,22 @@ namespace Entites.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Users",
+                name: "user",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     FullName = table.Column<string>(maxLength: 60, nullable: false),
-                    PhoneNumber = table.Column<string>(maxLength: 12, nullable: false),
+                    PhoneNumber = table.Column<string>(maxLength: 20, nullable: false),
                     Address = table.Column<string>(maxLength: 30, nullable: true),
-                    Password = table.Column<string>(maxLength: 30, nullable: false),
-                    Role = table.Column<string>(nullable: false)
+                    Password = table.Column<string>(nullable: false),
+                    Role = table.Column<string>(nullable: false, defaultValue: "User"),
+                    TotalSpend = table.Column<double>(nullable: false, defaultValue: 0.0),
+                    Discount = table.Column<double>(nullable: false, defaultValue: 0.0)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Users", x => x.Id);
+                    table.PrimaryKey("PK_user", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -45,21 +50,23 @@ namespace Entites.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    OrderTime = table.Column<DateTime>(nullable: false),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    OrderTime = table.Column<DateTime>(nullable: false, defaultValueSql: "NOW()"),
                     TotalPrice = table.Column<double>(nullable: false),
-                    CustomerPhoneNumber = table.Column<string>(maxLength: 12, nullable: false),
-                    UserId = table.Column<int>(nullable: false)
+                    CustomerPhoneNumber = table.Column<string>(maxLength: 20, nullable: true),
+                    Address = table.Column<string>(maxLength: 50, nullable: true),
+                    IsCompleted = table.Column<bool>(nullable: false, defaultValue: false),
+                    UserId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_order", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_order_Users_UserId",
+                        name: "FK_order_user_UserId",
                         column: x => x.UserId,
-                        principalTable: "Users",
+                        principalTable: "user",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -67,7 +74,7 @@ namespace Entites.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     OrderId = table.Column<int>(nullable: false),
                     ProductId = table.Column<int>(nullable: false)
                 },
@@ -116,7 +123,7 @@ namespace Entites.Migrations
                 name: "product");
 
             migrationBuilder.DropTable(
-                name: "Users");
+                name: "user");
         }
     }
 }

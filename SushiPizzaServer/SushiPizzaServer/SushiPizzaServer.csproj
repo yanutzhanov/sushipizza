@@ -9,6 +9,8 @@
     <ProjectReference Include="..\Entites\Entites.csproj" />
     <ProjectReference Include="..\HashService\HashService.csproj" />
     <ProjectReference Include="..\LoggerService\LoggerService.csproj" />
+    <ProjectReference Include="..\MSSQLMigrations\MSSQLMigrations.csproj" />
+    <ProjectReference Include="..\PostgresMigrations\PostgresMigrations.csproj" />
     <ProjectReference Include="..\Repository\Repository.csproj" />
   </ItemGroup>
 
@@ -26,6 +28,14 @@
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Properties\launchSettings.json">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 

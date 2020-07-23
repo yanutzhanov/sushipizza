@@ -22,6 +22,7 @@ export class MenuComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
+    this.itemsCount = 0;
     this.isAuthorize = false;
     if (sessionStorage.getItem('token')) {
       this.isAuthorize = true;

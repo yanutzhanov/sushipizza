@@ -8,7 +8,6 @@ using Repository;
 using Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using HashService;
 using AutoMapper;
 using SushiPizzaServer.ActionFilters;
 
@@ -20,7 +19,7 @@ namespace SushiPizzaServer.Extensions
         {
             services.AddCors(options =>
             {
-                options.AddPolicy("CorsPolicy", policy =>
+                options.AddPolicy("CORS", policy =>
                 {
                     policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
                 });
@@ -36,7 +35,8 @@ namespace SushiPizzaServer.Extensions
         {
             services.AddDbContext<RepositoryContext>(options =>
             {
-                options.UseNpgsql(configuration.GetConnectionString("PostgreSql"));
+                options.UseNpgsql(configuration.GetConnectionString("PostgreSql"),
+                    x => x.MigrationsAssembly("PostgresMigrations"));
             });
         }
 
@@ -44,7 +44,8 @@ namespace SushiPizzaServer.Extensions
         {
             services.AddDbContext<RepositoryContext>(options =>
             {
-                options.UseSqlServer(configuration.GetConnectionString("MsSqlLocalDb"));
+                options.UseSqlServer(configuration.GetConnectionString("MsSqlLocalDb"),
+                    x => x.MigrationsAssembly("MSSQLMigrations"));
             });
         }
 
