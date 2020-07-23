@@ -14,6 +14,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using NLog;
+using Repository;
 using SushiPizzaServer.ActionFilters;
 using SushiPizzaServer.Extensions;
 
@@ -33,12 +34,13 @@ namespace SushiPizzaServer
         {
             services.ConfigureCORS();
             services.ConfigureLoggerService();
-            // services.ConfigureMsSqlLocalContext(Configuration);
-            services.ConfigurePostgreSqlContext(Configuration);
+            services.ConfigureMsSqlLocalContext(Configuration);
+            // services.ConfigurePostgreSqlContext(Configuration);
             services.ConfigureRepositoryWrapper();
             services.ConfigureAuthenticationWithJwtBearer();
             services.ConfigureAutoMapper();
             services.ConfigureModelValidationAttribute();
+            services.AddTransient<IDataPointRepository, DataPointRepository>();
             #region Swagger
             services.AddSwaggerGen(c =>
             {
