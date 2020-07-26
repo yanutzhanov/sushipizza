@@ -33,9 +33,9 @@ namespace SushiPizzaServer
         public void ConfigureServices(IServiceCollection services)
         {
             services.ConfigureCORS();
-            services.ConfigureLoggerService();
-            services.ConfigureMsSqlLocalContext(Configuration);
-            // services.ConfigurePostgreSqlContext(Configuration);
+            services.ConfigureLoggerService(); 
+            // services.ConfigureMsSqlLocalContext(Configuration);
+            services.ConfigurePostgreSqlContext(Configuration);
             services.ConfigureRepositoryWrapper();
             services.ConfigureAuthenticationWithJwtBearer();
             services.ConfigureAutoMapper();

@@ -8,5 +8,7 @@ namespace Entites.Models
     {
         public DateTime Date { get; set; }
         public double Sum { get; set; }
+
+        public string DateString => Date.ToShortDateString();
     }
 }

@@ -21,10 +21,11 @@ namespace Repository
             List<DataPoint> dataPoints = new List<DataPoint>();
 
             var orderGroups = _context.Orders.Where(x => x.OrderTime > DateTime.Now - TimeSpan.FromDays(30))
-                              .GroupBy(x => x.OrderTime.Day);
+                              .ToList()
+                              .GroupBy(x => x.OrderTime.Date).OrderBy(x => x.Key);
 
 
-            foreach (IGrouping<DateTime, Order> orderGroup in orderGroups)
+            foreach (var orderGroup in orderGroups)
             {
                 dataPoints.Add(new DataPoint { Date = orderGroup.Key, Sum = orderGroup.Select(x => x.TotalPrice).Sum() });
             }

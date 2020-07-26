@@ -17,6 +17,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { AccountComponent } from './account/account.component';
+import { GraphicComponent } from './admin/graphic/graphic.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { AccountComponent } from './account/account.component';
       { path: 'contacts', component: ContactsComponent },
       { path: 'product-list/:type', component: ProductListComponent },
       { path: 'account', component: AccountComponent },
+      { path: 'admin', loadChildren: () => import('./admin/admin.module').then(x => x.AdminModule) },
       { path: '', redirectTo: '/home', pathMatch: 'full' },
       { path: '**', redirectTo: '/404', pathMatch: 'full' }
     ])

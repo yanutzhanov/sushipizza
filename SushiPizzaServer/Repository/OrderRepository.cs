@@ -35,7 +35,6 @@ namespace Repository
                 order.TotalPrice *= (1 - user.Discount / 100);
                 user.Discount = CalculateDiscount(user.TotalSpend);
             }
-            order.OrderProducts = order.OrderProducts.Select(op => new OrderProduct { Product = RepositoryContext.Products.Find(op.ProductId), Order = order }).ToArray();
 
             Create(order);
             RepositoryContext.OrderProducts.AddRange(order.OrderProducts);

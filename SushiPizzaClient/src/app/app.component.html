@@ -1,3 +1,9 @@
-<app-menu></app-menu>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div *ngIf="!this.isAdminPanel">
+    <app-menu></app-menu>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</div>
+
+<div *ngIf="this.isAdminPanel">
+    <router-outlet></router-outlet>
+</div>
